@@ -1,0 +1,182 @@
+\hypertarget{classSchedule}{\section{Schedule Class Reference}
+\label{classSchedule}\index{Schedule@{Schedule}}
+}
+
+
+{\ttfamily \#include $<$Schedule.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structDate}{Date} \hyperlink{classSchedule_afdf91c885aeba022140a9cfb5a9c1ba4}{get\-Date} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the date the schedule is for. \end{DoxyCompactList}\item 
+Appointment $\ast$ \hyperlink{classSchedule_a86714dcdba5007e5627fd07996bd64ea}{get\-Appointments} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the currently booked appointments. \end{DoxyCompactList}\item 
+\hyperlink{classAppointmentSlot}{Appointment\-Slot} $\ast$ \hyperlink{classSchedule_a621cc493f30f6b4aa5de332b0e60c800}{get\-Available\-Slots} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the currently available slots. \end{DoxyCompactList}\item 
+void \hyperlink{classSchedule_a218335a66a3e2345dc249e7c951aa437}{set\-Date} (\hyperlink{structDate}{Date} date)
+\begin{DoxyCompactList}\small\item\em Set the date of the appointment. \end{DoxyCompactList}\item 
+void \hyperlink{classSchedule_a8406c2157c04cfdc6b6946ab0a2ab6cb}{add\-Appointment} (Appointment appointment)
+\begin{DoxyCompactList}\small\item\em Add an appointment to the booked appointments. \end{DoxyCompactList}\item 
+void \hyperlink{classSchedule_ac0cc730d87aedb39a7ed1e6ea9dc4ba7}{remove\-Appointment} (Appointment appointment)
+\begin{DoxyCompactList}\small\item\em Remove an appointment to the booked appointments. \end{DoxyCompactList}\item 
+void \hyperlink{classSchedule_a91f472317535422af1fa0e8304e4ca1b}{add\-Available\-Slot} (\hyperlink{classAppointmentSlot}{Appointment\-Slot} slot)
+\begin{DoxyCompactList}\small\item\em Add an Appointment Slot to the available Appointment Slots. \end{DoxyCompactList}\item 
+void \hyperlink{classSchedule_a1487df95f4fb4f5324c76f20b7a444b4}{remove\-Available\-Slot} (\hyperlink{classAppointmentSlot}{Appointment\-Slot} slot)
+\begin{DoxyCompactList}\small\item\em Remove an Appointment Slot to the available Appointment Slots. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the daily schedule of appointments
+
+\begin{DoxyAuthor}{Author}
+Alex Sweeney
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+Created on Sun Mar 29 2020 
+
+\subsection{Member Function Documentation}
+\hypertarget{classSchedule_a8406c2157c04cfdc6b6946ab0a2ab6cb}{\index{Schedule@{Schedule}!add\-Appointment@{add\-Appointment}}
+\index{add\-Appointment@{add\-Appointment}!Schedule@{Schedule}}
+\subsubsection[{add\-Appointment}]{\setlength{\rightskip}{0pt plus 5cm}void Schedule\-::add\-Appointment (
+\begin{DoxyParamCaption}
+\item[{Appointment}]{appointment}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_a8406c2157c04cfdc6b6946ab0a2ab6cb}
+
+
+Add an appointment to the booked appointments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em appointment} & The appointment to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{classSchedule_a91f472317535422af1fa0e8304e4ca1b}{\index{Schedule@{Schedule}!add\-Available\-Slot@{add\-Available\-Slot}}
+\index{add\-Available\-Slot@{add\-Available\-Slot}!Schedule@{Schedule}}
+\subsubsection[{add\-Available\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Schedule\-::add\-Available\-Slot (
+\begin{DoxyParamCaption}
+\item[{{\bf Appointment\-Slot}}]{slot}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_a91f472317535422af1fa0e8304e4ca1b}
+
+
+Add an Appointment Slot to the available Appointment Slots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & The \hyperlink{classAppointmentSlot}{Appointment\-Slot} to add \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{classSchedule_a86714dcdba5007e5627fd07996bd64ea}{\index{Schedule@{Schedule}!get\-Appointments@{get\-Appointments}}
+\index{get\-Appointments@{get\-Appointments}!Schedule@{Schedule}}
+\subsubsection[{get\-Appointments}]{\setlength{\rightskip}{0pt plus 5cm}Appointment$\ast$ Schedule\-::get\-Appointments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_a86714dcdba5007e5627fd07996bd64ea}
+
+
+Retrieve the currently booked appointments. 
+
+\begin{DoxyReturn}{Returns}
+Appointment$\ast$ The currently booked appointments 
+\end{DoxyReturn}
+\hypertarget{classSchedule_a621cc493f30f6b4aa5de332b0e60c800}{\index{Schedule@{Schedule}!get\-Available\-Slots@{get\-Available\-Slots}}
+\index{get\-Available\-Slots@{get\-Available\-Slots}!Schedule@{Schedule}}
+\subsubsection[{get\-Available\-Slots}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Appointment\-Slot}$\ast$ Schedule\-::get\-Available\-Slots (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_a621cc493f30f6b4aa5de332b0e60c800}
+
+
+Retrieve the currently available slots. 
+
+\begin{DoxyReturn}{Returns}
+Appointment\-Slot$\ast$ The currently available slots 
+\end{DoxyReturn}
+\hypertarget{classSchedule_afdf91c885aeba022140a9cfb5a9c1ba4}{\index{Schedule@{Schedule}!get\-Date@{get\-Date}}
+\index{get\-Date@{get\-Date}!Schedule@{Schedule}}
+\subsubsection[{get\-Date}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date} Schedule\-::get\-Date (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_afdf91c885aeba022140a9cfb5a9c1ba4}
+
+
+Retrieve the date the schedule is for. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{structDate}{Date} the date the schedule is for 
+\end{DoxyReturn}
+\hypertarget{classSchedule_ac0cc730d87aedb39a7ed1e6ea9dc4ba7}{\index{Schedule@{Schedule}!remove\-Appointment@{remove\-Appointment}}
+\index{remove\-Appointment@{remove\-Appointment}!Schedule@{Schedule}}
+\subsubsection[{remove\-Appointment}]{\setlength{\rightskip}{0pt plus 5cm}void Schedule\-::remove\-Appointment (
+\begin{DoxyParamCaption}
+\item[{Appointment}]{appointment}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_ac0cc730d87aedb39a7ed1e6ea9dc4ba7}
+
+
+Remove an appointment to the booked appointments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em appointment} & The appointment to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{classSchedule_a1487df95f4fb4f5324c76f20b7a444b4}{\index{Schedule@{Schedule}!remove\-Available\-Slot@{remove\-Available\-Slot}}
+\index{remove\-Available\-Slot@{remove\-Available\-Slot}!Schedule@{Schedule}}
+\subsubsection[{remove\-Available\-Slot}]{\setlength{\rightskip}{0pt plus 5cm}void Schedule\-::remove\-Available\-Slot (
+\begin{DoxyParamCaption}
+\item[{{\bf Appointment\-Slot}}]{slot}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_a1487df95f4fb4f5324c76f20b7a444b4}
+
+
+Remove an Appointment Slot to the available Appointment Slots. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em slot} & The \hyperlink{classAppointmentSlot}{Appointment\-Slot} to remove \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{classSchedule_a218335a66a3e2345dc249e7c951aa437}{\index{Schedule@{Schedule}!set\-Date@{set\-Date}}
+\index{set\-Date@{set\-Date}!Schedule@{Schedule}}
+\subsubsection[{set\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void Schedule\-::set\-Date (
+\begin{DoxyParamCaption}
+\item[{{\bf Date}}]{date}
+\end{DoxyParamCaption}
+)}}\label{classSchedule_a218335a66a3e2345dc249e7c951aa437}
+
+
+Set the date of the appointment. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date the schedule is for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Schedule.\-h\end{DoxyCompactItemize}

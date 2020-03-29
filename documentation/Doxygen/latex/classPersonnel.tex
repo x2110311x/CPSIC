@@ -1,0 +1,177 @@
+\hypertarget{classPersonnel}{\section{Personnel Class Reference}
+\label{classPersonnel}\index{Personnel@{Personnel}}
+}
+
+
+{\ttfamily \#include $<$Personnel.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{classPersonnel_afa3b060fdfe99c2b5b5a639f8f23af36}{get\-Name} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the name of the personnel. \end{DoxyCompactList}\item 
+string \hyperlink{classPersonnel_adb147189db398cfba7af263375976810}{get\-Type} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the type of the personnel. \end{DoxyCompactList}\item 
+int \hyperlink{classPersonnel_a2e591b54342e4e6231188a7edfb5bc29}{get\-Employee\-Id} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the id of the personnel. \end{DoxyCompactList}\item 
+\hyperlink{classAppointmentSlot}{Appointment\-Slot} $\ast$ \hyperlink{classPersonnel_afe87cfc23870c19edbc9b0b9b2a076c7}{get\-Working\-Times} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the schedule of the personnel. \end{DoxyCompactList}\item 
+void \hyperlink{classPersonnel_a0ebbd3ea047e1c88d9385c92a01b9038}{set\-Type} (string type)
+\begin{DoxyCompactList}\small\item\em Set the type of the personnel. \end{DoxyCompactList}\item 
+void \hyperlink{classPersonnel_a1b8bbd0a1bbd19b527732f1b5e4ced78}{set\-Name} (string name)
+\begin{DoxyCompactList}\small\item\em Set the name of the personnel. \end{DoxyCompactList}\item 
+void \hyperlink{classPersonnel_a46158f3ea7b0bfe08df92d80f8f6e28e}{set\-Employee\-Id} (int employee\-I\-D)
+\begin{DoxyCompactList}\small\item\em Set the id of the personnel. \end{DoxyCompactList}\item 
+void \hyperlink{classPersonnel_a6e1c9dcfd49f56b6f0bde128ec2e0725}{add\-Working\-Time} (\hyperlink{classAppointmentSlot}{Appointment\-Slot} work\-Time)
+\begin{DoxyCompactList}\small\item\em Add a working time of the personnel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Defines the object of an employee of the K\-S\-U health services that provides care
+
+\begin{DoxyAuthor}{Author}
+Alex Sweeney
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0
+\end{DoxyVersion}
+Created on Sun Mar 29 2020 
+
+\subsection{Member Function Documentation}
+\hypertarget{classPersonnel_a6e1c9dcfd49f56b6f0bde128ec2e0725}{\index{Personnel@{Personnel}!add\-Working\-Time@{add\-Working\-Time}}
+\index{add\-Working\-Time@{add\-Working\-Time}!Personnel@{Personnel}}
+\subsubsection[{add\-Working\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Personnel\-::add\-Working\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Appointment\-Slot}}]{work\-Time}
+\end{DoxyParamCaption}
+)}}\label{classPersonnel_a6e1c9dcfd49f56b6f0bde128ec2e0725}
+
+
+Add a working time of the personnel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em work\-Time} & The working time of the personnel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{classPersonnel_a2e591b54342e4e6231188a7edfb5bc29}{\index{Personnel@{Personnel}!get\-Employee\-Id@{get\-Employee\-Id}}
+\index{get\-Employee\-Id@{get\-Employee\-Id}!Personnel@{Personnel}}
+\subsubsection[{get\-Employee\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int Personnel\-::get\-Employee\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPersonnel_a2e591b54342e4e6231188a7edfb5bc29}
+
+
+Retrieve the id of the personnel. 
+
+\begin{DoxyReturn}{Returns}
+int The id of the personnel 
+\end{DoxyReturn}
+\hypertarget{classPersonnel_afa3b060fdfe99c2b5b5a639f8f23af36}{\index{Personnel@{Personnel}!get\-Name@{get\-Name}}
+\index{get\-Name@{get\-Name}!Personnel@{Personnel}}
+\subsubsection[{get\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string Personnel\-::get\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPersonnel_afa3b060fdfe99c2b5b5a639f8f23af36}
+
+
+Retrieve the name of the personnel. 
+
+\begin{DoxyReturn}{Returns}
+string The name of the personnel 
+\end{DoxyReturn}
+\hypertarget{classPersonnel_adb147189db398cfba7af263375976810}{\index{Personnel@{Personnel}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!Personnel@{Personnel}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string Personnel\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPersonnel_adb147189db398cfba7af263375976810}
+
+
+Retrieve the type of the personnel. 
+
+\begin{DoxyReturn}{Returns}
+string The type of the personnel 
+\end{DoxyReturn}
+\hypertarget{classPersonnel_afe87cfc23870c19edbc9b0b9b2a076c7}{\index{Personnel@{Personnel}!get\-Working\-Times@{get\-Working\-Times}}
+\index{get\-Working\-Times@{get\-Working\-Times}!Personnel@{Personnel}}
+\subsubsection[{get\-Working\-Times}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Appointment\-Slot}$\ast$ Personnel\-::get\-Working\-Times (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classPersonnel_afe87cfc23870c19edbc9b0b9b2a076c7}
+
+
+Retrieve the schedule of the personnel. 
+
+\begin{DoxyReturn}{Returns}
+Appointment\-Slot$\ast$ The schedule of the personnel 
+\end{DoxyReturn}
+\hypertarget{classPersonnel_a46158f3ea7b0bfe08df92d80f8f6e28e}{\index{Personnel@{Personnel}!set\-Employee\-Id@{set\-Employee\-Id}}
+\index{set\-Employee\-Id@{set\-Employee\-Id}!Personnel@{Personnel}}
+\subsubsection[{set\-Employee\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void Personnel\-::set\-Employee\-Id (
+\begin{DoxyParamCaption}
+\item[{int}]{employee\-I\-D}
+\end{DoxyParamCaption}
+)}}\label{classPersonnel_a46158f3ea7b0bfe08df92d80f8f6e28e}
+
+
+Set the id of the personnel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em employee\-I\-D} & The id of the personnel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{classPersonnel_a1b8bbd0a1bbd19b527732f1b5e4ced78}{\index{Personnel@{Personnel}!set\-Name@{set\-Name}}
+\index{set\-Name@{set\-Name}!Personnel@{Personnel}}
+\subsubsection[{set\-Name}]{\setlength{\rightskip}{0pt plus 5cm}void Personnel\-::set\-Name (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}}\label{classPersonnel_a1b8bbd0a1bbd19b527732f1b5e4ced78}
+
+
+Set the name of the personnel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the personnel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{classPersonnel_a0ebbd3ea047e1c88d9385c92a01b9038}{\index{Personnel@{Personnel}!set\-Type@{set\-Type}}
+\index{set\-Type@{set\-Type}!Personnel@{Personnel}}
+\subsubsection[{set\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Personnel\-::set\-Type (
+\begin{DoxyParamCaption}
+\item[{string}]{type}
+\end{DoxyParamCaption}
+)}}\label{classPersonnel_a0ebbd3ea047e1c88d9385c92a01b9038}
+
+
+Set the type of the personnel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the personnel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+Personnel.\-h\end{DoxyCompactItemize}
