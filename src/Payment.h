@@ -28,7 +28,17 @@ private:
 	Invoice invoice;	///< the invoice that the payment corresponds with
 public:
 	//Constructors
+	/**
+ 	 * @brief Construct an payment object
+     */
 	Payment();
+    /**
+     * @brief Construct an payment object
+	 * @param dateReceived The date the payment was received
+	 * @param type The type of payment - Credit Card, cash, ceheck
+	 * @param amount The amount of the payment
+	 * @param invoice The invoice the payment is associated with
+	 */
 	Payment(DateTime dateReceived, string type, int amount, Invoice invoice);
 	
 	//Destructors

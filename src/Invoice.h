@@ -30,7 +30,18 @@ class Invoice {
 		bool paid;	///< Whether the invoice is paid or not
 	public:
 		//Constructors
+		/**
+		 * @brief Construct an invoice object
+		 */
 		Invoice();
+
+		/**
+		 * @brief Construct an invoice object
+		 * @param visit The viist the invoice is associated with
+		 * @param cost The balance on the invoice
+		 * @param dateCreated The date and time the invoice was created
+		 * @param paid Whether or not it has been paid yet
+		 */
 		Invoice(Visit visit, int cost, DateTime dateCreated, bool paid);
 		
 		//Destructors
@@ -61,25 +72,25 @@ class Invoice {
 		//Modifiers
 
 		/** @brief Set the visit of the invoice
-		* @param Visit the visit that corresponds with the invoice
+		* @param visit the visit that corresponds with the invoice
 		* @return None
 		*/
 		void setVisit(Visit visit);
 
 		/** @brief Set the cost of the invoice
-		* @param Int the cost of the invoice
+		* @param cost the cost of the invoice
 		* @return None
 		*/
 		void setCost(int cost);
 
 		/** @brief Set the date the invoice was created
-		* @param DateTime the date the invoice was created
+		* @param dateCreated the date the invoice was created
 		* @return None
 		*/
 		void setDateCreated(DateTime dateCreated);
 
 		/** @brief pay the invoice
-		* @param Payment the amount paid toward the invoice
+		* @param payment the amount paid toward the invoice
 		* @return None
 		*/
 		void pay(Payment& payment);

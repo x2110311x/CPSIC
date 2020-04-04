@@ -1,5 +1,5 @@
 /**
- * @file Appoinment.h
+ * @file Appointment.h
  * @author Adam Adkins
  * @brief Defines the class for storing appointments
  * @version 0.1

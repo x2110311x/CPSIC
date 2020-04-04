@@ -1,5 +1,5 @@
 /**
- * @file PersonnelShedule.h
+ * @file PersonnelSchedule.h
  * @author Adam Adkins
  * @brief Defines the daily schedule of appointments for a specific Personnel
  * @version 0.1
