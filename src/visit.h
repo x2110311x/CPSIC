@@ -1,20 +1,24 @@
 /**
  * @file visit.h
- * @author your name (you@domain.com)
- * @brief 
+ * @author Adam Adkins
+ * @brief Defines the actual occurence of visits
  * @version 0.1
- * @date 2020-03-31
- * 
+ * @date 2020-03-31 
  * @copyright Copyright (c) 2020
- * 
  */
+
+#ifndef VISIT_H
+#define VISIT_H
+
 #include <string>
-#include datetime.h
-#include Personnel.h
-#include AppointmentSlot.h 
-#include Patient.h
-#include Test.h
-#include TestResult.h 
+#include "datetime.h"
+#include "Personnel.h"
+#include "AppointmentSlot.h" 
+#include "Patient.h"
+#include "Test.h"
+#include "TestResult.h"
+
+using namespace std;
 
 class Visit{
 
@@ -84,7 +88,7 @@ class Visit{
          * 
          * @return TestResults 
          */
-        TestResults getTestResults();
+        TestResult* getTestResults();
 
         /**
          * @brief Set the Patient object
@@ -111,39 +115,28 @@ class Visit{
          */
         void setDateTime(DateTime dateTime);
         /**
-         * @brief 
+         * @brief Add a test to the appointment
          * 
-         * @param test 
+         * @param test the test to record
          */
         void addTest(Test test);
         /**
-         * @brief 
+         * @brief Remove a test from the appointment
          * 
-         * @param test 
+         * @param test the rest to remove
          */
         void removeTest(Test test);
         /**
-         * @brief 
+         * @brief Record a test result for the appointment
          * 
-         * @param testResult 
+         * @param testResult The testresult to add
          */
         void addTestResult(TestResult testResult);
         /**
-         * @brief 
+         * @brief Remove a testresult from the appointment
          * 
-         * @param testResult 
+         * @param testResult The test to remove
          */
         void removeTestResult(TestResult testResult);
-
-
-}
-
-
-
-
-
-
-
-
-
-
+};
+#endif

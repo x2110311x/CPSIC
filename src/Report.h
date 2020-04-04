@@ -1,7 +1,7 @@
 /**
 * @class Report
 *
-* This class generates a report of the earnings of 
+* @brief This class generates a report of the earnings of 
 * the doctors and therapists
 *
 * @author Scott Caldwell

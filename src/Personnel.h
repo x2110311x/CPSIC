@@ -1,7 +1,7 @@
 /**
  * @class Personnel
  * 
- * Defines the object of an employee of the KSU health services
+ * @brief Defines the object of an employee of the KSU health services
  * that provides care
  * 
  * @author Alex Sweeney

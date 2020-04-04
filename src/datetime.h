@@ -1,7 +1,7 @@
 /**
  * @class Date
  * 
- * Defines the Date objects for appointment slots
+ * @brief Defines the Date objects for appointment slots
  * and other classes, since C++ contains no built-in
  * class for this purpose
  * 

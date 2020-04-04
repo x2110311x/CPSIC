@@ -1,7 +1,7 @@
 /**
 * @class Payment
 *
-* This class keeps track of the payments made
+* @brief This class keeps track of the payments made
 *
 * @author Scott Caldwell
 *

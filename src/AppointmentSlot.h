@@ -1,7 +1,7 @@
 /**
  * @class AppointmentSlot
  * 
- * This class defines the timeslots of appointments, used to mark
+ * @brief This class defines the timeslots of appointments, used to mark
  * the times of appointments, personnel working times,
  * and available appointment slots.
  * 

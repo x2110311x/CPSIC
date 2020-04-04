@@ -1,7 +1,7 @@
 /**
  * @class Schedule
  * 
- * Defines the daily schedule of appointments
+ * @brief Defines the daily schedule of appointments
  * 
  * @author Alex Sweeney
  * 

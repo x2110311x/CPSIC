@@ -1,18 +1,22 @@
 /**
  * @file Appoinment.h
- * @author your name (you@domain.com)
- * @brief 
+ * @author Adam Adkins
+ * @brief Defines the class for storing appointments
  * @version 0.1
  * @date 2020-03-31
- * 
  * @copyright Copyright (c) 2020
- * 
  */
+
+#ifndef APPOINTMENT_H
+#define APPOINTMENT_H
+
 #include <string>
-#include datetime.h
-#include Personnel.h
-#include AppointmentSlot.h 
-#include Patient.h 
+#include "datetime.h"
+#include "Personnel.h"
+#include "AppointmentSlot.h"
+#include "Patient.h" 
+
+using namespace std;
 
 class Appointment   {
     private:
@@ -26,7 +30,7 @@ class Appointment   {
          * @brief Construct a new appointment object
          * 
          */
-        appointment();
+        Appointment();
         /**
          * @brief Construct a new appointment object
          * 
@@ -35,12 +39,12 @@ class Appointment   {
          * @param personnel 
          * @param dateTime 
          */
-        appointment(string type, Patient patient, Personnel personnel, AppointmentSlot dateTime);
+        Appointment(string type, Patient patient, Personnel personnel, AppointmentSlot dateTime);
         /**
          * @brief Destroy the appointment object
          * 
          */
-        ~appointment();
+        ~Appointment();
 
         /**
          * @brief Get the Date Time object
@@ -90,4 +94,6 @@ class Appointment   {
          * @param dateTime 
          */
         void setDateTime(DateTime dateTime);
-}
+};
+
+#endif

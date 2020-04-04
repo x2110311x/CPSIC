@@ -1,7 +1,7 @@
 /**
  * @class Patient
  * 
- * This class defines the object to store patient data.
+ * @brief This class defines the object to store patient data.
  * 
  * @author Alex Sweeney
  * 

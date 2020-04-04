@@ -1,17 +1,22 @@
 /**
  * @file TestResult.h
- * @author your name (you@domain.com)
- * @brief 
+ * @author Adam Adkins
+ * @brief Defines the structure for storing lab test results
  * @version 0.1
  * @date 2020-04-02
- * 
  * @copyright Copyright (c) 2020
- * 
  */
+
+#ifndef TESTRESULT_H
+#define TESTRESULT_H
+
 #include <string>
-#include DateTime.h
-#include Patient.h 
-#include Test.h
+#include "DateTime.h"
+#include "Patient.h" 
+#include "Test.h"
+
+using namespace std;
+
 class TestResult : public Test
 {
 
@@ -20,7 +25,6 @@ class TestResult : public Test
         string result;
       
     public:
-    
         /**
          * @brief Construct a new Test Result object
          * 
@@ -85,20 +89,6 @@ class TestResult : public Test
          * @param result 
          */
         void setResult( string result);
-        
+};
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#endif

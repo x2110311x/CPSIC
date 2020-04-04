@@ -1,15 +1,21 @@
 /**
  * @file Test.h
- * @author your name (you@domain.com)
- * @brief 
+ * @author Adam Adkins
+ * @brief Defines structure for storing lab tests with appointments
  * @version 0.1
  * @date 2020-03-31
  * 
  * @copyright Copyright (c) 2020
  * 
  */
-#include DateTime.h
-#include Patient.h
+
+#ifndef TEST_H
+#define TEST_H
+
+#include "DateTime.h"
+#include "Patient.h"
+
+using namespace std;
 
 class Test{
     private:
@@ -71,7 +77,6 @@ class Test{
          * 
          * @param type 
          */
-        setType(string type);
-
-
-}
+        void setType(string type);
+};
+#endif
