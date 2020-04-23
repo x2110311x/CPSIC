@@ -1,7 +1,7 @@
 /**
 * @class Payment
 *
-* @brief This class keeps track of the payments made
+* This class keeps track of the payments made
 *
 * @author Scott Caldwell
 *
@@ -17,6 +17,7 @@
 #include "datetime.h"
 #include "Invoice.h"
 
+
 using namespace std;
 
 class Payment {
@@ -25,20 +26,12 @@ private:
 	DateTime dateReceived;	///< The date when the payment is made
 	string type;	///< the type of payment made
 	int amount;		///< the amount of the payment
+	int refNum;		///< The reference number for the payment
 	Invoice invoice;	///< the invoice that the payment corresponds with
+	//friend ostream& operator<<(ostream& os, const Payment& p);
 public:
 	//Constructors
-	/**
- 	 * @brief Construct an payment object
-     */
 	Payment();
-    /**
-     * @brief Construct an payment object
-	 * @param dateReceived The date the payment was received
-	 * @param type The type of payment - Credit Card, cash, ceheck
-	 * @param amount The amount of the payment
-	 * @param invoice The invoice the payment is associated with
-	 */
 	Payment(DateTime dateReceived, string type, int amount, Invoice invoice);
 	
 	//Destructors
