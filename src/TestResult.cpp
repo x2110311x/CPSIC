@@ -9,46 +9,83 @@
 using namespace std;
 
 /**
+ * @brief Construct a new Test Result:: Test Result object default constructor
+ * 
+ */
+TestResult::TestResult(){
+
+
+}
+
+/**
+ * @brief Construct a new Test Result:: Test Result object
+ * 
+ * @param newTimeReceived 
+ * @param newResult 
+ */
+TestResult::TestResult(DateTime newTimeReceived, string newResult){
+
+    timeReceveived = newTimeReceived;
+    result = newResult;
+}
+
+/**
+ * @brief Destroy the Test Result:: Test Result object
+ * 
+ */
+TestResult::~TestResult(){
+
+    cout<< "Test Result being deleted" ;
+
+}
+
+/**
  * Get the Test object
  */
-Test getTest(){
-    Test returnvar;
-    return returnvar;
+Test TestResult::getTest(){
+    
+    return Test;
 }
 
 /**
  * Get the Time Received object
  */
-DateTime getTimeReceived(){
-    DateTime returnvar;
-    return returnvar;
+DateTime TestResult::getTimeReceived(){
+    
+    return timeReceveived;
 }
 
 /**
  * Get the Result object
  */
-string getResult(){
-    string returnvar;
-    return returnvar;
+string TestResult::getResult(){
+    
+    return result;
+
 }
 
 /**
  * Set the Test object
  */
-void setTest(Test test){
-    return;
+void TestResult::setTest(Test newTest){
+
+    Test = newTest;
 }
 
 /**
  * Set the Time Received object
  */
-void setTimeReceived(DateTime time){
-    return;
+void TestResult::setTimeReceived(DateTime newTime){
+
+timeReceveived = newTime;
+
 }
 
 /**
  * Set the Result object
  */
-void setResult( string result){
-    return;
+void TestResult::setResult( string newResult){
+
+result = newResult;
+
 }

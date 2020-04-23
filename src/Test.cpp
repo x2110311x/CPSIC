@@ -7,48 +7,83 @@
 #include "Test.h"
 
 using namespace std;
+/**
+ * @brief Construct a new Test:: Test object default constructor
+ * 
+ */
+Test::Test(){
+
+}
+/**
+ * @brief Construct a new Test:: Test object
+ * 
+ * @param newTimePerformed 
+ * @param newPatient 
+ * @param newType 
+ */
+Test::Test(DateTime newTimePerformed, Patient newPatient, string newType){
+
+    timePerformed = newTimePerformed;
+    patient = newPatient;
+    type = newType;
+
+}
+/**
+ * @brief Destroy the Test:: Test object
+ * 
+ */
+Test::~Test(){
+
+    cout << "Test being deleted";
+}
 
 /**
  * Get the Time Performed object
  */
-DateTime getTimePerformed(){
-    DateTime returnvar;
-    return returnvar;
+DateTime Test::getTimePerformed(){
+   
+    return timePerformed;
 }
 
 /**
  * Get the Patient object
  */
-Patient getPatient(){
-    Patient returnvar;
-    return returnvar;
+Patient Test::getPatient(){
+   
+    return patient;
 }
 
 /**
  * Get the Type object
  */
-string getType(){
-    string returnvar;
-    return returnvar;
+string Test::getType(){
+    
+    return type;
 }
 
 /**
 * Set the Time Performed object
 */
-void setTimePerformed(DateTime time){
-    return;
+void Test::setTimePerformed(DateTime newTime){
+
+    timePerformed = newTime;
+
 }
 
 /**
  * Set the Patient object
  */
-void setPatient(Patient patient){
-    return;
+void Test::setPatient(Patient newPatient){
+
+    patient = newPatient;
+
 }
 
 /**
  * Set the Type object
  */
-void setType(string type){
-    return;
+void Test::setType(string newType){
+
+    type = newType;
+
 }
