@@ -1,39 +1,56 @@
 /**
- * Report.cpp
- * 
- * Declaration of Report
- */
+* Report.cpp
+*
+* Declaration of Report
+*/
+
 
 #include "Report.h"
 
 using namespace std;
 
-/** 
- * Retrieve the date the report was generated
- */
-DateTime getDateGenerated(){
-    DateTime returnvar;
-    return returnvar;
+Report::Report() {
+
+}
+
+Report::Report(DateTime dG, string rD) {
+	dateGenerated = dG;
+	reportData = rD;
+}
+
+//Destructor
+Report::~Report() {
+
+}
+
+//Accessors
+/**
+* get the Date Generated object
+*/
+DateTime Report::getDateGenerated() {
+	return dateGenerated;
 }
 
 /**
- * Retrieve the data of the report
- */
-string getReportData(){
-    string returnvar;
-    return;
+* get the Report Data object
+*/
+string Report::getReportData() {
+	return reportData;
 }
 
-/** 
- * set the date of the report
- */
-void setDateGenerated(DateTime date){
-    return;
+//Modifiers
+/**
+* set the Date Generated object
+*/
+void Report::setDateGenerated(DateTime date) {
+	dateGenerated = date;
+	return;
 }
 
 /**
- * set the data of the report
- */
-void setReportData(string data){
-    return;
+* set the Report Data object
+*/
+void Report::setReportData(string data) {
+	reportData = data;
+	return;
 }
