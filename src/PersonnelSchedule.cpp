@@ -1,23 +1,40 @@
 /**
- * PersonnelSchedule.cpp
- * 
- * Declaration of PersonnelSchedule
- */
+* PersonnelSchedule.cpp
+*
+* Declaration of PersonnelSchedule
+*/
 
 #include "PersonnelSchedule.h"
 using namespace std;
 
-/**
- * Get the Personnel object
- */
-Personnel getPersonnel(){
-    Personnel returnvar;
-    return returnvar;
+PersonnelSchedule::PersonnelSchedule(){
+
+}
+
+PersonnelSchedule::PersonnelSchedule(Personnel p, Date d, vector<Appointment> a, vector<AppointmentSlot> as){
+	personnel = p;
+	setDate(d);
+	setAppointments(a);
+	setAvailableSlots(as);
+}
+
+PersonnelSchedule::~PersonnelSchedule()
+{
 }
 
 /**
- * Set the Personnel object
- */
-void setPersonnel(Personnel personnel){
-    return;
+* Get the Personnel object
+*/
+Personnel PersonnelSchedule::getPersonnel()
+{
+	return personnel;
+}
+
+/**
+* Set the Personnel object
+*/
+void PersonnelSchedule::setPersonnel(Personnel p)
+{
+	personnel = p;
+	return;
 }
