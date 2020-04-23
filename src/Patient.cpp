@@ -9,91 +9,138 @@
 using namespace std;
 
 /**
+ * @brief Construct a new Patient:: Patient object default constructor
+ * 
+ */
+Patient::Patient(){
+  
+}
+
+/**
+ * @brief Construct a new Patient:: Patient object
+ * 
+ * @param newName 
+ * @param newGender 
+ * @param newRace 
+ * @param newPatientType 
+ * @param newKsuID 
+ * @param newDob 
+ */
+Patient::Patient(string newName, string newGender, string newRace, string newPatientType, int newKsuID, Date newDob){
+    name = newName;
+    gender = newGender;
+    race = newRace;
+    patientType = newPatientType;
+    ksuID = newKsuID;
+    dob = newDob;
+}
+
+/**
+ * @brief Destroy the Patient:: Patient object
+ * 
+ */
+Patient::~Patient(){
+
+}
+
+/**
  * Return the patient's name
  */
-string getName(){
-    string name;
+string Patient::getName(){
+   
     return name;
 }
 
 /**
  * Return the patient's gender
  */
-string getGender(){
-    string gender;
+string Patient::getGender(){
+    
     return gender;
 }
 
 /**
  * Return the patient's race
  */
-string getRace(){
-    string race;
+string Patient::getRace(){
+   
     return race;
 }
 
 /**
  * Return the patient's type
  */
-string getPatientType(){
-    string patientType;
+string Patient::getPatientType(){
+    
     return patientType;
 }
 
 /**
  * Return the patient's date of birth
  */
-Date getDob(){
-    Date dob;
+Date Patient::getDob(){
+    
     return dob;
 }
 
 /**
  * Return the patient's KSU ID
  */
-int getKSUID(){
-    int ksuID;
+int Patient::getKSUID(){
+    
     return ksuID;
 }
+
 
 /**
  * Set the patient's type
  */
-void setPatientType(string patienttype){
-    return;
+void Patient::setPatientType(string newPatientType){
+
+patientType = newPatientType;
+    
 }
 
 /**
  * Set the patient's name
  */
-void setName(string name){
-    return;
+void Patient::setName(string newName){
+
+name = newName;
+
 }
 
 /**
  * Set the patient's gender
  */
-void setGender(string gender){
-    return;
+void Patient::setGender(string newGender){
+
+gender = newGender;
+
 }
 
 /**
  * Set the patient's race
  */
-void setRace(string race){
-    return;
+void Patient::setRace(string newRace){
+
+race=newRace;
+
 }
 
 /**
  * Set the patient's date of birth
  */
-void setDob(Date dob){
-    return;
+void Patient::setDob(Date newDob){
+
+dob = newDob;
 }
 
 /**
  * Set the patient's KSU ID
  */
-void setKSUID(int ksuID){
-    return;
+void Patient::setKSUID(int newKsuID){
+
+ ksuID=newKsuID;   
+
 }

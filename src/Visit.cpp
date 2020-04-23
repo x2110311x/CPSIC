@@ -8,96 +8,138 @@
 
 using namespace std;
 
+/**
+ * @brief Construct a new Visit:: Visit object default constructor
+ * 
+ */
+Visit::Visit(){
+
+
+}
+
+/**
+ * @brief Construct a new Visit:: Visit object
+ * 
+ * @param newType 
+ * @param newPatient 
+ * @param newPersonnel 
+ * @param newTestResult 
+ * @param newTest 
+ * @param newDateTime 
+ */
+Visit::Visit(string newType, Patient newPatient, Personnel newPersonnel, TestResult newTestResult, Test newTest,AppointmentSlot newDateTime){
+
+    type = newType;
+    patient = newPatient;
+    personnel = newPersonnel;
+    testResult = newTestResult;
+    test = newTest;
+    dateTime = newDateTime;
+}
+
+Visit::~Visit(){
+
+}
 
 /**
  * @brief Get the Date Time object
  */
-DateTime getDateTime(){
-    DateTime returnvar;
-    return returnvar;
+DateTime Visit::getDateTime(){
+    
+    return dateTime;
 }
 
 /**
  * @brief Get the Patient object
  */
-Patient getPatient(){
-    Patient returnvar;
-    return returnvar;
+Patient Visit::getPatient(){
+    
+    return patient;
 }
 
 /**
  * @brief Get the Type object
  */
-string getType(){
-    string returnvar;
-    return returnvar;
+string Visit::getType(){
+   
+    return type;
 }
 
 /**
  * @brief Get the Personnel object
  */
-Personnel getPersonnel(){
-    Personnel returnvar;
-    return returnvar;
+Personnel Visit::getPersonnel(){
+    
+    return personnel;
 }
 
 /**
  * @brief Get the Test object
  */
-Test getTest(){
-    Test returnvar;
-    return returnvar;
+Test Visit::getTest(){
+    
+    return test;
 }
 
 /**
  * @brief Get the Test Results object
  */
-TestResult* getTestResults(){
-    TestResult* returnvar;
-    return returnvar;
+TestResult* Visit::getTestResults(){
+    
+    return TestResult;
 }
 
 
 /**
  * @brief Set the Patient object
  */
-void setPatient(Patient patient){
-    return;
+void Visit::setPatient(Patient newPatient){
+
+patient = newPatient;    
 }
 
 /**
  * @brief Set the Type object
  */
-void setType(string type){
-    return;
+void Visit::setType(string newType){
+
+type = newType;
+
 }
 
 /**
  * @brief Set the Personnel object
  */
-void setPersonnel(Personnel personnel){
-    return;
+void Visit::setPersonnel(Personnel newPersonnel){
+
+personnel = newPersonnel:
+
 }
 
 /**
  * @brief Set the Date Time object
  */
-void setDateTime(DateTime dateTime){
-    return;
+void Visit::setDateTime(DateTime newDateTime){
+
+dateTime = newDateTime;
+
 }
 
 /**
  * @brief Add a test to the appointment
  */
-void addTest(Test test){
-    return;
+void Visit::addTest(Test newTest){
+
+test = newTest;
+
 }
 
 /**
  * @brief Remove a test from the appointment
  */
-void removeTest(Test test){
-    return;
+void Visit::removeTest(Test test){
+
+
 }
 
 /**
