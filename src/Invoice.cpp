@@ -1,70 +1,87 @@
 /**
- * Invoice.cpp
- * 
- * Declaration of Invoice
- */
+* Invoice.cpp
+*
+* Declaration of Invoice
+*/
 
 
 #include "Invoice.h"
 
-using namespace std;
+Invoice::Invoice() {
+	paid = 0;
+	amountPaid = 0;
+}
 
-/**
- * Retrieve the visit that corresponds with the invoice
- */
-Visit getVisit(){
-    Visit returnvar;
-    return returnvar;
+Invoice::Invoice(Visit v, int c, DateTime d, bool p) {
+	visit = v;
+	cost = c;
+	dateCreated = d;
+	paid = p;
+}
+
+
+Invoice::~Invoice() {
+
 }
 
 /**
- * Retrieve the cost of the invoice
- */
-int getCost(){
-    int cost;
-    return cost;
+* Get the Visit object
+*/
+Visit Invoice::getVisit() {
+	return visit;
 }
 
 /**
- * Retrieve the time the invoice was created
- */
-DateTime getDateCreated(){
-    DateTime dateCreated;
-    return dateCreated;
+* Get the Cost object
+*/
+int Invoice::getCost() {
+	return cost;
 }
 
 /**
- * Retrieve if the invoice is paid
- */
-bool isPaid(){
-    bool paid;
-    return paid;
+* Get the Date Created object
+*/
+DateTime Invoice::getDateCreated() {
+	return dateCreated;
 }
 
 /**
- * Set the visit of the invoice
- */
-void setVist(Visit visit){
-    return;
+* Get the is Paid object
+*/
+bool Invoice::isPaid() {
+	return paid;
 }
 
 /**
- * Set the cost of the invoice
- */
-void setCost(int cost){
-    return;
+* Set the Visit object
+*/
+void Invoice::setVisit(Visit v) {
+	visit = v;
+	return;
 }
 
 /**
- * Set the date the invoice was created
- */
-void setDateCreated(DateTime dateCreated){
-    return;
+* Set the Cost object
+*/
+void Invoice::setCost(int c) {
+	cost = c;
+	return;
 }
 
 /**
- *  pay the invoice
- */
-void pay(Payment& payment){
-    return;
+* Set the Date Created object
+*/
+void Invoice::setDateCreated(DateTime d) {
+	dateCreated = d;
+	return;
+}
+
+/**
+* Set the Pay object
+*/
+void Invoice::pay(int pay) {
+	amountPaid = pay;
+	if (amountPaid == cost)
+		paid = true;
+	return;
 }
