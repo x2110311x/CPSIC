@@ -20,9 +20,10 @@ Appointment::Appointment(){
  * @param newDateTime 
  * @param newPatient 
  * @param newType 
- * @param newPersonnel 
+ * @param newPersonnel
+ * @param r
  */
-Appointment::Appointment(DateTime newDateTime, Patient newPatient, string newType, Personnel newPersonnel) 
+Appointment::Appointment(DateTime newDateTime, Patient newPatient, string newType, Personnel newPersonnel, int r) 
 
 { 
 
@@ -34,6 +35,7 @@ type = newType;
 
 personnel = newPersonnel; 
 
+refNum = r;
 }
 /**
  * @brief Destroy the Appointment:: Appointment object
@@ -79,6 +81,13 @@ Personnel Appointment::getPersonnel(){
 }
 
 /**
+ * Get the reference number object
+ */
+int Appointment::getRefNum() {
+	return refNum;
+}
+
+/**
  * Set the Patient object
  */
 void Appointment::setPatient(Patient newPatient){
@@ -112,4 +121,12 @@ void Appointment::setDateTime(DateTime newDateTime){
 
 dateTime = newDateTime;
 
+}
+
+/**
+ * Set the RefNum object
+ */
+void Appointment::setRefNum(int r) {
+	refNum = r;
+	return;
 }
