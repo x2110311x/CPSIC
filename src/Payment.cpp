@@ -1,37 +1,54 @@
 /**
- * Payment.cpp
- * 
- * Declaration of Payment
- */
+* Payment.cpp
+*
+* Declaration of Payment
+*/
 
 #include "Payment.h"
 
 using namespace std;
 
-/** Retrieve the type of payment
-*/
-string getType(){
-    string returnvar;
-    return returnvar;
+Payment::Payment() {
+
 }
 
-/** Retrieve the amount of the payment
-*/
-int getAmount(){
-    int returnvar;
-    return returnvar;
+Payment::Payment(DateTime dR, string t, int a, Invoice i) {
+	dateReceived = dR;
+	type = t;
+	amount = a;
+	invoice = i;
 }
 
-/** Retrieve the date the payment was received
-*/
-DateTime getDateReceived(){
-    DateTime returnvar;
-    return returnvar;
+//Destructors
+Payment::~Payment() {
+
 }
 
-/** Retrieve the invoice that corresponds with the payment
+//accessors
+/**
+* Get the Type object
 */
-Invoice getInvoice(){
-    Invoice returnvar;
-    return returnvar;
+string Payment::getType() {
+	return type;
+}
+
+/**
+* Get the Amount object
+*/
+int Payment::getAmount() {
+	return amount;
+}
+
+/**
+* Get the Date Received object
+*/
+DateTime Payment::getDateReceived() {
+	return dateReceived;
+}
+
+/**
+* Get the Invoice object
+*/
+Invoice Payment::getInvoice() {
+	return invoice;
 }
