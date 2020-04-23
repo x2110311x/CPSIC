@@ -24,6 +24,7 @@ class Appointment   {
         Patient patient;
         Personnel personnel;
         AppointmentSlot dateTime;
+        int refnum;
 
     public:
         /**
@@ -38,8 +39,9 @@ class Appointment   {
          * @param patient 
          * @param personnel 
          * @param dateTime 
+         * @param refnum
          */
-        Appointment(string type, Patient patient, Personnel personnel, AppointmentSlot dateTime);
+        Appointment(string type, Patient patient, Personnel personnel, AppointmentSlot dateTime, int refnum);
         /**
          * @brief Destroy the appointment object
          * 
@@ -71,6 +73,12 @@ class Appointment   {
          */
         Personnel getPersonnel();
         /**
+         *@brief Get the RefNum object
+         *
+         * @return int
+         */
+        int getRefNum();
+        /**
          * @brief Set the Patient object
          * 
          * @param patient 
@@ -94,6 +102,12 @@ class Appointment   {
          * @param dateTime 
          */
         void setDateTime(DateTime dateTime);
+        /**
+         * @brief Set the RefNum object
+         *
+         * @param int
+         */
+        void setRefNum(int r);
 };
 
 #endif
