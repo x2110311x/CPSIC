@@ -26,16 +26,7 @@ private:
 	string reportData;	///< The data of the report
 public:
 	//constructors
-	/**
-     * @brief Construct an report object
-	 */
 	Report();
-
-	/**
-     * @brief Construct an report object
-	 * @param dateGenerated The date the report was generated
-	 * @param reportData The data of the report
-	 */
 	Report(DateTime dateGenerated, string reportData);
 
 	//Destructor
@@ -56,13 +47,13 @@ public:
 	//Modifiers
 
 	/** @brief set the date of the report
-	* @param date the date of the report being generated
+	* @param DateTime the date of the report being generated
 	* @return None
 	*/
 	void setDateGenerated(DateTime date);
 
 	/** @brief set the data of the report
-	* @param data the data the report consists of
+	* @param String the data the report consists of
 	* @return None
 	*/
 	void setReportData(string data);
