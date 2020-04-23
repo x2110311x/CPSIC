@@ -1,76 +1,105 @@
 /**
- * Personnel.cpp
- * 
- * Declaration of Personnel
- */
+* Personnel.cpp
+*
+* Declaration of Personnel
+*/
+
 
 #include "Personnel.h"
 
 using namespace std;
 
-/**
- * Return the name of personnel
- */
-string getName(){
-    string name;
-    return name;
+Personnel::Personnel() {
+
+}
+
+Personnel::Personnel(string n, string t, int id, vector<AppointmentSlot> w) {
+	name = n;
+	type = t;
+	employeeID = id;
+	workingTimes = w;
 }
 
 /**
- * Return the type of personnel
- */
-string getType(){
-    string type;
-    return type;
+* get the Name object
+*/
+string Personnel::getName() {
+	return name;
 }
 
 /**
- * Return the id of personnel
- */
-int getID(){
-    int id;
-    return id;
+* get the Type object
+*/
+string Personnel::getType() {
+	return type;
 }
 
 /**
- * Return the working times of personnel
- */
-AppointmentSlot* getWorkingTimes(){
-    AppointmentSlot* workingTimes;
-    return workingTimes;
+* get the Employee ID object
+*/
+int Personnel::getEmployeeId() {
+	return employeeID;
 }
 
 /**
- * Set the type of the personnel
- */
-void setType(string type){
-    return;
+* get the Working Times vector
+*/
+vector<AppointmentSlot> Personnel::getWorkingTimes() {
+	return workingTimes;
 }
 
 /**
- * Set the name of the personnel
- */
-void setName(string name){
-    return;
+* get the Appointment Slot object
+*/
+AppointmentSlot Personnel::getAppointmentSlot(int ref) {
+	for (vector<AppointmentSlot>::iterator it = workingTimes.begin(); it != workingTimes.end(); ++it) {
+		if (it->getRefNum() == ref) {
+			return *it;
+			break;
+		}
+		return *it;
+	}
 }
 
 /**
- * Set the id of the personnel
- */
-void setID(int id){
-    return;
+* Set the Type object
+*/
+void Personnel::setType(string t) {
+	type = t;
+	return;
 }
 
 /**
- * Add a working time for the personnel
- */
-void addWorkingTime(AppointmentSlot workTime){
-    return;
+* Set the Name object
+*/
+void Personnel::setName(string n) {
+	name = n;
+	return;
 }
 
 /**
- * Remove a working time for the personnel
- */
-void removeWorkingTime(AppointmentSlot workTime){
-    return;
+* Set the Employee ID object
+*/
+void Personnel::setEmployeeId(int id) {
+	employeeID = id;
+	return;
+}
+
+/**
+* Add a Working Time object to a vector
+*/
+void Personnel::addWorkingTime(AppointmentSlot w) {
+	workingTimes.push_back(w);
+	return;
+}
+
+/**
+* Remove a Working Time object from a vector
+*/
+void Personnel::removeWorkingTime(AppointmentSlot w) {
+	for (vector<AppointmentSlot>::iterator it = workingTimes.begin(); it != workingTimes.end(); ++it) {
+		if (it->getRefNum() == w.getRefNum())
+			workingTimes.erase(it);
+	}
+	return;
 }
