@@ -99,7 +99,7 @@ void Schedule::setDate(Date d) {
 void Schedule::addAppointment(Appointment appointment) {
 	appointments.push_back(appointment);
 	for (vector<AppointmentSlot>::iterator it = availableSlots.begin(); it != availableSlots.end(); ++it) {
-		if (*it == appointment.getDateTime())
+		if (it->getRefNum() == appointment.getRefNum())
 			it->setFilled(1);
 	}
 	return;
@@ -111,7 +111,7 @@ void Schedule::addAppointment(Appointment appointment) {
 */
 void Schedule::removeAppointment(Appointment appointment) {
 	for (vector<AppointmentSlot>::iterator it = availableSlots.begin(); it != availableSlots.end(); ++it) {
-		if (*it == appointment.getDateTime())
+		if (it->getRefNum() == appointment.getRefNum())
 			it->setFilled(0);
 	}
 	for (vector<Appointment>::iterator it = appointments.begin(); it != appointments.end(); ++it) {
