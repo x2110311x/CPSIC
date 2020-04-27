@@ -22,12 +22,15 @@ AppointmentSlot::AppointmentSlot(){
  * 
  * @param newStartTime 
  * @param newEndTme 
+ * @param ref
+ * @param f
  */
 AppointmentSlot::AppointmentSlot(DateTime newStartTime, DateTime newEndTime){
 
     startTime = newStartTime;
     endTime = newEndTime;
-
+    refNum = ref;
+    filled = f;
 }
 
 /**
@@ -45,6 +48,20 @@ DateTime AppointmentSlot::getEndTime(){
     
     
     return endTime;
+}
+
+/**
+ * Return the reference number of the slot
+ */
+int AppointmentSlot::getRefNum() {
+	return refNum;
+}
+
+/**
+ * Return whether the slot is filled or not
+ */
+bool AppointmentSlot::getFilled() {
+	return filled;
 }
 
 /**

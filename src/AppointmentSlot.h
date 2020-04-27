@@ -23,6 +23,8 @@ class AppointmentSlot{
     private: // Attributes
         DateTime startTime;   ///< The Start Time of the appointment
         DateTime endTime;     ///< The end time of the appointment
+        int refNum;	  ///< reference number for the slot
+	    bool filled;	///< Whether the slot is filled or not with an appointment
     
     public:
         /** @brief Creates a new AppointmentSlot Object
@@ -40,6 +42,16 @@ class AppointmentSlot{
          * @return DateTime the ending time of the AppointmentSlot
          */
         DateTime getEndTime();
+    
+        /** @brief Retrieve the reference number of the slot
+         * @return int the reference number of the slot
+         */
+    	int getRefNum();
+	    
+        /** @brief Retrieve whether the slot is filled or not
+         * @return bool whether the slot is filled or not
+         */
+        bool getFilled();
 
         // Modifiers
 

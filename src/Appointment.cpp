@@ -24,7 +24,8 @@ Appointment::Appointment(){
  * @param newDateTime 
  * @param newPatient 
  * @param newType 
- * @param newPersonnel 
+ * @param newPersonnel
+ * @param r
  */
 Appointment::Appointment(string newType, Patient newPatient, Personnel newPersonnel, AppointmentSlot newDateTime)
 { 
@@ -37,6 +38,7 @@ Appointment::Appointment(string newType, Patient newPatient, Personnel newPerson
 
     personnel = newPersonnel; 
 
+refNum = r;
 }
 
 
@@ -71,6 +73,13 @@ Personnel Appointment::getPersonnel(){
     
     return personnel;
 
+}
+
+/**
+ * Get the reference number object
+ */
+int Appointment::getRefNum() {
+	return refNum;
 }
 
 /**
