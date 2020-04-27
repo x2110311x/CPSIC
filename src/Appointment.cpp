@@ -12,8 +12,12 @@ using namespace std;
  * 
  */
 Appointment::Appointment(){
+    Patient patient;
+    AppointmentSlot dateTime;
+    string type;
+    Personnel personnel;
+}
 
-}  
 /**
  * @brief Construct a new Appointment:: Appointment object
  * 
@@ -22,33 +26,24 @@ Appointment::Appointment(){
  * @param newType 
  * @param newPersonnel 
  */
-Appointment::Appointment(DateTime newDateTime, Patient newPatient, string newType, Personnel newPersonnel) 
-
+Appointment::Appointment(string newType, Patient newPatient, Personnel newPersonnel, AppointmentSlot newDateTime)
 { 
 
-dateTime = newDateTime; 
+    dateTime = newDateTime; 
 
-patient = newPatient; 
+    patient = newPatient; 
 
-type = newType; 
+    type = newType; 
 
-personnel = newPersonnel; 
-
-}
-/**
- * @brief Destroy the Appointment:: Appointment object
- * 
- */
-Appointment::~Appointment(){
-
-delete []s;
+    personnel = newPersonnel; 
 
 }
+
 
 /**
  * Get the Date Time object
  */
-DateTime Appointment::getDateTime(){
+AppointmentSlot Appointment::getDateTime(){
    
     return dateTime;
 }
@@ -108,8 +103,13 @@ personnel = newPersonnel;
 /**
  * Set the Date Time object
  */
-void Appointment::setDateTime(DateTime newDateTime){
+void Appointment::setDateTime(AppointmentSlot newDateTime){
 
-dateTime = newDateTime;
+    dateTime = newDateTime;
 
+}
+
+bool Appointment::operator==(Appointment a)
+{
+    return (patient == a.patient && dateTime == a.dateTime && type == a.type && personnel == a.personnel);
 }

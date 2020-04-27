@@ -23,21 +23,12 @@ AppointmentSlot::AppointmentSlot(){
  * @param newStartTime 
  * @param newEndTme 
  */
-AppointmentSlot::AppointmentSlot(DateTime newStartTime, DateTime newEndTme){
+AppointmentSlot::AppointmentSlot(DateTime newStartTime, DateTime newEndTime){
 
     startTime = newStartTime;
     endTime = newEndTime;
 
 }
-
-/**
- * @brief Destroy the Appointment Slot:: Appointment Slot object
- * 
- */
-AppointmentSlot::~AppointmentSlot(){
-
-}
-
 
 /**
  * Return the starting time of the slot
@@ -70,4 +61,9 @@ void AppointmentSlot::setStartTime(DateTime newStartTime){
 void AppointmentSlot::setEndTime(DateTime newEndTime){
 
     endTime = newEndTime;
+}
+
+bool AppointmentSlot::operator==(AppointmentSlot a)
+{
+    return(startTime == a.startTime && endTime == a.endTime);
 }

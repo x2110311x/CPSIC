@@ -25,6 +25,10 @@ class AppointmentSlot{
         DateTime endTime;     ///< The end time of the appointment
     
     public:
+        /** @brief Creates a new AppointmentSlot Object
+         */
+        AppointmentSlot(DateTime newStartTime, DateTime newEndTme);
+        AppointmentSlot();
         // Accessors
 
         /** @brief Retrieve the starting time of the slot
@@ -50,6 +54,8 @@ class AppointmentSlot{
          * @return none
          */
         void setEndTime(DateTime endTime);
+
+        bool operator==(AppointmentSlot a);
 };
 
 #endif

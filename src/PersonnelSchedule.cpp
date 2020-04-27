@@ -7,8 +7,8 @@
 #include "PersonnelSchedule.h"
 using namespace std;
 
-PersonnelSchedule::PersonnelSchedule(){
-
+PersonnelSchedule::PersonnelSchedule(Date newDate){
+	Personnel personnel;
 }
 
 PersonnelSchedule::PersonnelSchedule(Personnel p, Date d, vector<Appointment> a, vector<AppointmentSlot> as){

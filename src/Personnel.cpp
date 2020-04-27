@@ -10,14 +10,17 @@
 using namespace std;
 
 Personnel::Personnel() {
-
+	string name = "";
+	string type = "";
+	long employeeID = 0;
+	vector<AppointmentSlot> workingTimes = {};
 }
 
-Personnel::Personnel(string n, string t, int id, vector<AppointmentSlot> w) {
-	name = n;
-	type = t;
-	employeeID = id;
-	workingTimes = w;
+Personnel::Personnel(string newName, string newType, long newId, vector<AppointmentSlot> newWorkingTimes) {
+	name = newName;
+	type = newType;
+	employeeID = newId;
+	workingTimes = newWorkingTimes;
 }
 
 /**
@@ -37,7 +40,7 @@ string Personnel::getType() {
 /**
 * get the Employee ID object
 */
-int Personnel::getEmployeeId() {
+long Personnel::getEmployeeId(){
 	return employeeID;
 }
 
@@ -48,18 +51,6 @@ vector<AppointmentSlot> Personnel::getWorkingTimes() {
 	return workingTimes;
 }
 
-/**
-* get the Appointment Slot object
-*/
-AppointmentSlot Personnel::getAppointmentSlot(int ref) {
-	for (vector<AppointmentSlot>::iterator it = workingTimes.begin(); it != workingTimes.end(); ++it) {
-		if (it->getRefNum() == ref) {
-			return *it;
-			break;
-		}
-		return *it;
-	}
-}
 
 /**
 * Set the Type object
@@ -80,7 +71,7 @@ void Personnel::setName(string n) {
 /**
 * Set the Employee ID object
 */
-void Personnel::setEmployeeId(int id) {
+void Personnel::setEmployeeId(long id) {
 	employeeID = id;
 	return;
 }
@@ -97,9 +88,14 @@ void Personnel::addWorkingTime(AppointmentSlot w) {
 * Remove a Working Time object from a vector
 */
 void Personnel::removeWorkingTime(AppointmentSlot w) {
-	for (vector<AppointmentSlot>::iterator it = workingTimes.begin(); it != workingTimes.end(); ++it) {
-		if (it->getRefNum() == w.getRefNum())
-			workingTimes.erase(it);
+	for (vector<AppointmentSlot>::iterator itr = workingTimes.begin(); itr != workingTimes.end(); ++itr) {
+		if (*itr == w);
+			itr = workingTimes.erase(itr);
 	}
 	return;
+}
+
+bool Personnel::operator==(Personnel a)
+{
+	return (name == a.name && type == a.type && employeeID == a.employeeID);
 }

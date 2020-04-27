@@ -12,8 +12,13 @@ using namespace std;
  * @brief Construct a new Patient:: Patient object default constructor
  * 
  */
-Patient::Patient(){
-  
+Patient::Patient() {
+    string name = "";
+    string gender = "";
+    string race = "";
+    string patientType = "";
+    long ksuID = 0;
+    Date dob;
 }
 
 /**
@@ -26,21 +31,13 @@ Patient::Patient(){
  * @param newKsuID 
  * @param newDob 
  */
-Patient::Patient(string newName, string newGender, string newRace, string newPatientType, int newKsuID, Date newDob){
+Patient::Patient(string newName, string newGender, string newRace, string newPatientType, long newKsuID, Date newDob){
     name = newName;
     gender = newGender;
     race = newRace;
     patientType = newPatientType;
     ksuID = newKsuID;
     dob = newDob;
-}
-
-/**
- * @brief Destroy the Patient:: Patient object
- * 
- */
-Patient::~Patient(){
-
 }
 
 /**
@@ -86,7 +83,7 @@ Date Patient::getDob(){
 /**
  * Return the patient's KSU ID
  */
-int Patient::getKSUID(){
+long Patient::getKSUID(){
     
     return ksuID;
 }
@@ -128,6 +125,11 @@ race=newRace;
 
 }
 
+bool Patient::operator==(Patient a)
+{
+    return (name == a.name && gender == a.gender && dob == a.dob && race == a.race && ksuID == a.ksuID && patientType == a.patientType);
+}
+
 /**
  * Set the patient's date of birth
  */
@@ -139,7 +141,7 @@ dob = newDob;
 /**
  * Set the patient's KSU ID
  */
-void Patient::setKSUID(int newKsuID){
+void Patient::setKSUID(long newKsuID){
 
  ksuID=newKsuID;   
 

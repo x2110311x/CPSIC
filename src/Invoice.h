@@ -36,9 +36,6 @@ public:
 	Invoice();
 	Invoice(Visit visit, int cost, DateTime dateCreated, bool paid);
 	
-	//Destructors
-	~Invoice();
-
 	//Accessors
 
 	/** @brief Retrieve the visit that corresponds with the invoice

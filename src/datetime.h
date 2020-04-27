@@ -25,6 +25,7 @@ struct Date {
     int month;         ///< The number of the month
     int year;          ///< The four digit year
     string dayOfWeek;  ///< The name of the day of the week
+    bool operator==(Date a) const;
 };
 
 
@@ -45,7 +46,7 @@ struct Date {
 struct DateTime : Date{ 
     int hour;     ///< The number of the hour (24h clock)
     int minute;   ///< The number of the minute
-    int seconds;  ///< The number of seconds
+    bool operator==(DateTime a) const;
 };
 
 #endif

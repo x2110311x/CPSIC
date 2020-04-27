@@ -17,12 +17,12 @@
 
 using namespace std;
 
-class TestResult : public Test
+class TestResult
 {
-
-    private:       
-        DateTime timeReceveived;
+    private:
+        DateTime timeReceived;
         string result;
+        Test test;
       
     public:
         /**
@@ -40,7 +40,7 @@ class TestResult : public Test
          * @param result 
          * @param type 
          */
-        TestResult(Test test, DateTime timePerformed, DateTime timeReceveived, Patient patient, string result, string type);
+        TestResult(Test test, DateTime timeReceived, string result);
         
         /**
          * @brief Destroy the Test Result object

@@ -58,7 +58,7 @@ class Visit{
          * 
          * @return DateTime 
          */
-        DateTime getDateTime();
+        AppointmentSlot getDateTime();
         /**
          * @brief Get the Patient object
          * 
@@ -113,7 +113,7 @@ class Visit{
          * 
          * @param dateTime 
          */
-        void setDateTime(DateTime dateTime);
+        void setDateTime(AppointmentSlot dateTime);
         /**
          * @brief Add a test to the appointment
          * 

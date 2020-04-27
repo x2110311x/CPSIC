@@ -27,9 +27,9 @@ private: //attributes
 	vector<AppointmentSlot> availableSlots; ///< The available appointment slots
 	//friend ostream& operator<<(ostream& os, const vector<AppointmentSlot>& a);
 public:
+	Schedule(Date date);
 	Schedule();
 	Schedule(Date d, vector<Appointment> a, vector<AppointmentSlot> as);
-	~Schedule();
 	// Accessors
 
 	/** @brief Retrieve the date the schedule is for

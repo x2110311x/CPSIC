@@ -40,18 +40,13 @@ class Appointment   {
          * @param dateTime 
          */
         Appointment(string type, Patient patient, Personnel personnel, AppointmentSlot dateTime);
-        /**
-         * @brief Destroy the appointment object
-         * 
-         */
-        ~Appointment();
 
         /**
          * @brief Get the Date Time object
          * 
-         * @return DateTime 
+         * @return AppointmentSlot 
          */
-        DateTime getDateTime();
+        AppointmentSlot getDateTime();
         /**
          * @brief Get the Patient object
          * 
@@ -93,7 +88,9 @@ class Appointment   {
          * 
          * @param dateTime 
          */
-        void setDateTime(DateTime dateTime);
+        void setDateTime(AppointmentSlot dateTime);
+
+        bool operator==(Appointment a);
 };
 
 #endif

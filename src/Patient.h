@@ -24,10 +24,12 @@ class Patient {
         string gender;      ///< The gender of the patient
         string race;        ///< The race of the patient
         string patientType; ///< The type of patient - student or faculty
-        int ksuID;          ///< The patient's Kent State ID number
+        long ksuID;          ///< The patient's Kent State ID number
         Date dob;           ///< The patient's date of birth
 
     public:
+        Patient();
+        Patient(string newName, string newGender, string newRace, string newPatientType, long newKsuID, Date newDob);
         // Accessors
 
         /** @brief Retrieve the name of the patient
@@ -56,9 +58,9 @@ class Patient {
         Date getDob();
 
         /** @brief Retrieve the KSU ID of the patient
-         * @return int The KSU ID of the patient
+         * @return long The KSU ID of the patient
          */
-        int getKSUID();
+        long getKSUID();
 
         // Modifiers
 
@@ -78,7 +80,7 @@ class Patient {
          * @param ksuID The KSU ID of the patient
          * @return none
          */
-        void setKSUID(int ksuID);
+        void setKSUID(long ksuID);
 
         /** @brief Set the gender of the patient
          * @param gender The gender of the patient
@@ -98,6 +100,7 @@ class Patient {
          */
         void setRace(string race);
 
+        bool operator==(Patient a);
 };
 
 #endif

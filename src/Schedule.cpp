@@ -14,35 +14,66 @@ using namespace std;
 * Sets the Reference Number member for Available Slot objects from 1 to 12
 * Sets the Filled member for the Available Slot objects to false
 */
-Schedule::Schedule() {
-	for (vector<AppointmentSlot>::iterator it = availableSlots.begin(); it != availableSlots.end(); ++it) {
-		int mi = 00;
-		int hr = 10;
-		int i = 1;
-		if (it == availableSlots.begin()) {
-			it->setStartTime(hr, mi, 00);
-			it->setEndTime(hr, mi + 30, 00);
-			it->setRefNum(i);
-			it->setFilled(0);
-			i++;
-		}
-		if(mi = 00){
-			mi = 30;
-			it->setStartTime(hr, mi, 00);
-			it->setEndTime(hr, mi - 30, 00);
-			it->setRefNum(i);
-			it->setFilled(0);
-			i++;
-		}
-		if (mi = 30) {
-			mi = 00;
-			hr += 1;
-			it->setStartTime(hr, mi, 00);
-			it->setEndTime(hr, mi + 30, 00);
-			it->setRefNum(i);
-			it->setFilled(0);
-			i++;
-		}
+Schedule::Schedule(Date newDate) {
+	date = newDate;
+	DateTime startTime;
+	DateTime endTime;
+	startTime.day = date.day;
+	startTime.month = date.month;
+	startTime.year = date.year;
+	startTime.dayOfWeek = date.dayOfWeek;
+	endTime.day = date.day;
+	endTime.month = date.month;
+	endTime.year = date.year;
+	endTime.dayOfWeek = date.dayOfWeek;
+	for (int i = 10; i < 16; ++i) {
+		startTime.hour = i;
+		startTime.minute = 0;
+		endTime.hour = i;
+		endTime.minute = 30;
+
+		AppointmentSlot slotToAdd1(startTime, endTime);
+		availableSlots.push_back(slotToAdd1);
+
+		startTime.hour = i;
+		startTime.minute = 30;
+		endTime.hour = i+1;
+		endTime.minute = 0;
+
+		AppointmentSlot slotToAdd2(startTime, endTime);
+		availableSlots.push_back(slotToAdd2);
+	}
+}
+
+Schedule::Schedule()
+{
+	Date date;
+	DateTime startTime;
+	DateTime endTime;
+	startTime.day = date.day;
+	startTime.month = date.month;
+	startTime.year = date.year;
+	startTime.dayOfWeek = date.dayOfWeek;
+	endTime.day = date.day;
+	endTime.month = date.month;
+	endTime.year = date.year;
+	endTime.dayOfWeek = date.dayOfWeek;
+	for (int i = 10; i < 16; ++i) {
+		startTime.hour = i;
+		startTime.minute = 0;
+		endTime.hour = i;
+		endTime.minute = 30;
+
+		AppointmentSlot slotToAdd1(startTime, endTime);
+		availableSlots.push_back(slotToAdd1);
+
+		startTime.hour = i;
+		startTime.minute = 30;
+		endTime.hour = i + 1;
+		endTime.minute = 0;
+
+		AppointmentSlot slotToAdd2(startTime, endTime);
+		availableSlots.push_back(slotToAdd2);
 	}
 }
 
@@ -50,10 +81,6 @@ Schedule::Schedule(Date d, vector<Appointment> a, vector<AppointmentSlot> as) {
 	date = d;
 	appointments = a;
 	availableSlots = as;
-}
-
-Schedule::~Schedule() {
-
 }
 
 /**
@@ -75,13 +102,7 @@ vector<Appointment> Schedule::getAppointments() {
 * Return the available appointment slots for that date
 */
 vector<AppointmentSlot> Schedule::getAvailableSlots() {
-	vector<AppointmentSlot>temp;
-	for (vector<AppointmentSlot>::iterator it = availableSlots.begin(); it != availableSlots.end(); ++it) {
-		if (!it->getFilled())
-			temp.push_back(*it);
-	}
-	return temp;
-	//return availableSlots;
+	return availableSlots;
 }
 
 /**
@@ -98,10 +119,7 @@ void Schedule::setDate(Date d) {
 */
 void Schedule::addAppointment(Appointment appointment) {
 	appointments.push_back(appointment);
-	for (vector<AppointmentSlot>::iterator it = availableSlots.begin(); it != availableSlots.end(); ++it) {
-		if (*it == appointment.getDateTime())
-			it->setFilled(1);
-	}
+	removeAvailableSlot(appointment.getDateTime());
 	return;
 }
 
@@ -110,15 +128,11 @@ void Schedule::addAppointment(Appointment appointment) {
 * Remove an appointment to the booked appointments
 */
 void Schedule::removeAppointment(Appointment appointment) {
-	for (vector<AppointmentSlot>::iterator it = availableSlots.begin(); it != availableSlots.end(); ++it) {
-		if (*it == appointment.getDateTime())
-			it->setFilled(0);
+	for (vector<Appointment>::iterator itr = appointments.begin(); itr != appointments.end(); ++itr) {
+		if (*itr == appointment)
+			itr = appointments.erase(itr);
 	}
-	for (vector<Appointment>::iterator it = appointments.begin(); it != appointments.end(); ++it) {
-		if (it->getRefNum() == appointment.getRefNum()) {
-			appointments.erase(it);
-		}
-	}
+	availableSlots.push_back(appointment.getDateTime());
 	return;
 }
 
@@ -142,12 +156,10 @@ void Schedule::addAvailableSlot(AppointmentSlot slot) {
 * Remove an Appointment Slot to the available Appointment Slots
 */
 void Schedule::removeAvailableSlot(AppointmentSlot slot) {
-	for (vector<AppointmentSlot>::iterator it = availableSlots.begin(); it != availableSlots.end(); ++it) {
-		if (it->getRefNum() == slot.getRefNum())
-			it->setFilled(1);
-			//availableSlots.erase(it);
+	for (vector<AppointmentSlot>::iterator itr = availableSlots.begin(); itr != availableSlots.end(); ++itr) {
+		if (*itr == slot)
+			itr = availableSlots.erase(itr);
 	}
-
 	return;
 }
 

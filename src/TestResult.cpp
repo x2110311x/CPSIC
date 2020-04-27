@@ -5,6 +5,7 @@
  */
 
 #include "TestResult.h"
+#include <iostream>
 
 using namespace std;
 
@@ -23,9 +24,10 @@ TestResult::TestResult(){
  * @param newTimeReceived 
  * @param newResult 
  */
-TestResult::TestResult(DateTime newTimeReceived, string newResult){
-
-    timeReceveived = newTimeReceived;
+TestResult::TestResult(Test newTest, DateTime newTimeReceived, string newResult)
+{
+    test = newTest;
+    timeReceived = newTimeReceived;
     result = newResult;
 }
 
@@ -44,7 +46,7 @@ TestResult::~TestResult(){
  */
 Test TestResult::getTest(){
     
-    return Test;
+    return test;
 }
 
 /**
@@ -52,7 +54,7 @@ Test TestResult::getTest(){
  */
 DateTime TestResult::getTimeReceived(){
     
-    return timeReceveived;
+    return timeReceived;
 }
 
 /**
@@ -69,7 +71,7 @@ string TestResult::getResult(){
  */
 void TestResult::setTest(Test newTest){
 
-    Test = newTest;
+    test = newTest;
 }
 
 /**
@@ -77,7 +79,7 @@ void TestResult::setTest(Test newTest){
  */
 void TestResult::setTimeReceived(DateTime newTime){
 
-timeReceveived = newTime;
+    timeReceived = newTime;
 
 }
 

@@ -20,10 +20,6 @@ Invoice::Invoice(Visit v, int c, DateTime d, bool p) {
 }
 
 
-Invoice::~Invoice() {
-
-}
-
 /**
 * Get the Visit object
 */

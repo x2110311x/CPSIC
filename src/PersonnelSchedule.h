@@ -19,7 +19,7 @@
 
 using namespace std;
 
-class PersonnelSchedule : public Schedule {
+class PersonnelSchedule : Schedule {
 
 
 private:
@@ -30,7 +30,7 @@ public:
 	* @brief Construct a new Personel Shedule object
 	*
 	*/
-	PersonnelSchedule();
+	PersonnelSchedule(Date date);
 	/**
 	* @brief Construct a new Personel Shedule object
 	*

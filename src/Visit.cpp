@@ -27,7 +27,7 @@ Visit::Visit(){
  * @param newTest 
  * @param newDateTime 
  */
-Visit::Visit(string newType, Patient newPatient, Personnel newPersonnel, TestResult newTestResult, Test newTest,AppointmentSlot newDateTime){
+Visit::Visit(string newType, Patient newPatient, Personnel newPersonnel, TestResult newTestResult, Test newTest, AppointmentSlot newDateTime){
 
     type = newType;
     patient = newPatient;
@@ -44,7 +44,7 @@ Visit::~Visit(){
 /**
  * @brief Get the Date Time object
  */
-DateTime Visit::getDateTime(){
+AppointmentSlot Visit::getDateTime(){
     
     return dateTime;
 }
@@ -86,7 +86,7 @@ Test Visit::getTest(){
  */
 TestResult* Visit::getTestResults(){
     
-    return TestResult;
+    return &testResult;
 }
 
 
@@ -112,16 +112,16 @@ type = newType;
  */
 void Visit::setPersonnel(Personnel newPersonnel){
 
-personnel = newPersonnel:
+    personnel = newPersonnel;
 
 }
 
 /**
  * @brief Set the Date Time object
  */
-void Visit::setDateTime(DateTime newDateTime){
+void Visit::setDateTime(AppointmentSlot newDateTime){
 
-dateTime = newDateTime;
+    dateTime = newDateTime;
 
 }
 
