@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['seconds_196',['seconds',['../struct_date_time.html#a0b36196a591d08b2512b02f7058560ee',1,'DateTime']]]
+  ['year_205',['year',['../struct_date.html#a3eeced2ed56bc95d56782b9e738db8ea',1,'Date']]]
 ];

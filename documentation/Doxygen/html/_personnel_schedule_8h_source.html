@@ -78,31 +78,29 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_personnel_shedule.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_personnel_shedule.html">PersonnelShedule</a> : <span class="keyword">public</span> <a class="code" href="class_schedule.html">Schedule</a> {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_personnel_schedule.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_personnel_schedule.html">PersonnelSchedule</a> : <a class="code" href="class_schedule.html">Schedule</a> {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">private</span>: </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="class_personnel.html">Personnel</a> personnel;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_personnel.html">Personnel</a> personnel;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <a class="code" href="class_personnel_shedule.html">PersonnelShedule</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="class_personnel_shedule.html">PersonnelShedule</a>(<a class="code" href="class_personnel.html">Personnel</a> personnel, <a class="code" href="struct_date.html">Date</a> date, <a class="code" href="class_appointment.html">Appointment</a> appointments, <a class="code" href="class_appointment_slot.html">AppointmentSlot</a> AvailableSlots);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        ~<a class="code" href="class_personnel_shedule.html">PersonnelShedule</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_personnel_schedule.html">PersonnelSchedule</a>(<a class="code" href="struct_date.html">Date</a> date);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="class_personnel_schedule.html">PersonnelSchedule</a>(<a class="code" href="class_personnel.html">Personnel</a> p, <a class="code" href="struct_date.html">Date</a> d, vector&lt;Appointment&gt; a, vector&lt;AppointmentSlot&gt; as);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ~<a class="code" href="class_personnel_schedule.html">PersonnelSchedule</a>();</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="class_personnel.html">Personnel</a> getPersonnel();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="class_personnel.html">Personnel</a> getPersonnel();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">void</span> setPersonnel(<a class="code" href="class_personnel.html">Personnel</a> personnel);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> setPersonnel(<a class="code" href="class_personnel.html">Personnel</a> p);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astruct_date_html"><div class="ttname"><a href="struct_date.html">Date</a></div><div class="ttdoc">Defines the Date objects for appointment slots and other classes, since C++ contains no built-in clas...</div><div class="ttdef"><b>Definition:</b> datetime.h:23</div></div>
-<div class="ttc" id="aclass_personnel_shedule_html"><div class="ttname"><a href="class_personnel_shedule.html">PersonnelShedule</a></div><div class="ttdef"><b>Definition:</b> PersonnelSchedule.h:22</div></div>
+<div class="ttc" id="aclass_personnel_schedule_html"><div class="ttname"><a href="class_personnel_schedule.html">PersonnelSchedule</a></div><div class="ttdef"><b>Definition:</b> PersonnelSchedule.h:22</div></div>
 <div class="ttc" id="a_appointment_8h_html"><div class="ttname"><a href="_appointment_8h.html">Appointment.h</a></div><div class="ttdoc">Defines the class for storing appointments.</div></div>
-<div class="ttc" id="aclass_appointment_slot_html"><div class="ttname"><a href="class_appointment_slot.html">AppointmentSlot</a></div><div class="ttdoc">This class defines the timeslots of appointments, used to mark the times of appointments,...</div><div class="ttdef"><b>Definition:</b> AppointmentSlot.h:22</div></div>
-<div class="ttc" id="aclass_appointment_html"><div class="ttname"><a href="class_appointment.html">Appointment</a></div><div class="ttdef"><b>Definition:</b> Appointment.h:21</div></div>
-<div class="ttc" id="aclass_personnel_html"><div class="ttname"><a href="class_personnel.html">Personnel</a></div><div class="ttdoc">Defines the object of an employee of the KSU health services that provides care.</div><div class="ttdef"><b>Definition:</b> Personnel.h:22</div></div>
-<div class="ttc" id="aclass_schedule_html"><div class="ttname"><a href="class_schedule.html">Schedule</a></div><div class="ttdoc">Defines the daily schedule of appointments.</div><div class="ttdef"><b>Definition:</b> Schedule.h:22</div></div>
+<div class="ttc" id="aclass_personnel_html"><div class="ttname"><a href="class_personnel.html">Personnel</a></div><div class="ttdef"><b>Definition:</b> Personnel.h:10</div></div>
+<div class="ttc" id="aclass_schedule_html"><div class="ttname"><a href="class_schedule.html">Schedule</a></div><div class="ttdoc">Defines the daily schedule of appointments.</div><div class="ttdef"><b>Definition:</b> Schedule.h:23</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -12,14 +12,25 @@ This class defines the timeslots of appointments, used to mark the times of appo
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_appointment_slot_a340752d0e15b84c8d51e7812d82662ab}{Appointment\+Slot}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} new\+Start\+Time, \mbox{\hyperlink{struct_date_time}{Date\+Time}} new\+End\+Tme)
+\begin{DoxyCompactList}\small\item\em Creates a new \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} Object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_appointment_slot_ae9e038864f485fe9b915b9f6a9aa136c}{Appointment\+Slot}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_appointment}{Appointment}} Slot\+:\+: \mbox{\hyperlink{class_appointment}{Appointment}} Slot object default constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_date_time}{Date\+Time}} \mbox{\hyperlink{class_appointment_slot_ae1bc0c4c7cdfd6ff0e19dac860ac1795}{get\+Start\+Time}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the starting time of the slot. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_date_time}{Date\+Time}} \mbox{\hyperlink{class_appointment_slot_aaabb9dee474cf30db424e4ab84c0f7a8}{get\+End\+Time}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the ending time of the slot. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_appointment_slot_a0d38e94c39e8c62ca9f164959db4cf3c}{get\+Ref\+Num}} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the reference number of the slot. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_appointment_slot_a5bbfc1e92e6ec42f51ff456b26259c8d}{get\+Filled}} ()
+\begin{DoxyCompactList}\small\item\em Retrieve whether the slot is filled or not. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_appointment_slot_a4e4bad089724bdecf9c71332b34ae50f}{set\+Start\+Time}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} start\+Time)
 \begin{DoxyCompactList}\small\item\em Set the starting time of the slot. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_appointment_slot_a2ca48b95d7b9f578f2f23f6d86a7f069}{set\+End\+Time}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} end\+Time)
-\begin{DoxyCompactList}\small\item\em Set the ending time of the slot. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set the ending time of the slot. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_appointment_slot_a51ea9205393b732262b5d20d923e250b}\label{class_appointment_slot_a51ea9205393b732262b5d20d923e250b}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} a)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -33,6 +44,42 @@ Alex Sweeney
 \end{DoxyVersion}
 Created on Sun Mar 29 2020 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_appointment_slot_a340752d0e15b84c8d51e7812d82662ab}\label{class_appointment_slot_a340752d0e15b84c8d51e7812d82662ab}} 
+\index{AppointmentSlot@{AppointmentSlot}!AppointmentSlot@{AppointmentSlot}}
+\index{AppointmentSlot@{AppointmentSlot}!AppointmentSlot@{AppointmentSlot}}
+\doxysubsubsection{\texorpdfstring{AppointmentSlot()}{AppointmentSlot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Appointment\+Slot\+::\+Appointment\+Slot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{new\+Start\+Time,  }\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{new\+End\+Time }\end{DoxyParamCaption})}
+
+
+
+Creates a new \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} Object. 
+
+Construct a new \mbox{\hyperlink{class_appointment}{Appointment}} Slot\+:\+: \mbox{\hyperlink{class_appointment}{Appointment}} Slot object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Start\+Time} & \\
+\hline
+{\em new\+End\+Tme} & \\
+\hline
+{\em ref} & \\
+\hline
+{\em f} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_appointment_slot_ae9e038864f485fe9b915b9f6a9aa136c}\label{class_appointment_slot_ae9e038864f485fe9b915b9f6a9aa136c}} 
+\index{AppointmentSlot@{AppointmentSlot}!AppointmentSlot@{AppointmentSlot}}
+\index{AppointmentSlot@{AppointmentSlot}!AppointmentSlot@{AppointmentSlot}}
+\doxysubsubsection{\texorpdfstring{AppointmentSlot()}{AppointmentSlot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Appointment\+Slot\+::\+Appointment\+Slot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_appointment}{Appointment}} Slot\+:\+: \mbox{\hyperlink{class_appointment}{Appointment}} Slot object default constructor. 
+
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_appointment_slot_aaabb9dee474cf30db424e4ab84c0f7a8}\label{class_appointment_slot_aaabb9dee474cf30db424e4ab84c0f7a8}} 
 \index{AppointmentSlot@{AppointmentSlot}!getEndTime@{getEndTime}}
@@ -45,9 +92,35 @@ Created on Sun Mar 29 2020
 Retrieve the ending time of the slot. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} the ending time of the \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} 
+\mbox{\hyperlink{struct_date_time}{Date\+Time}} the ending time of the \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_appointment_slot_ae1bc0c4c7cdfd6ff0e19dac860ac1795}\label{class_appointment_slot_ae1bc0c4c7cdfd6ff0e19dac860ac1795}} 
+Return the ending time of the slot \mbox{\Hypertarget{class_appointment_slot_a5bbfc1e92e6ec42f51ff456b26259c8d}\label{class_appointment_slot_a5bbfc1e92e6ec42f51ff456b26259c8d}} 
+\index{AppointmentSlot@{AppointmentSlot}!getFilled@{getFilled}}
+\index{getFilled@{getFilled}!AppointmentSlot@{AppointmentSlot}}
+\doxysubsubsection{\texorpdfstring{getFilled()}{getFilled()}}
+{\footnotesize\ttfamily bool Appointment\+Slot\+::get\+Filled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieve whether the slot is filled or not. 
+
+\begin{DoxyReturn}{Returns}
+bool whether the slot is filled or not
+\end{DoxyReturn}
+Return whether the slot is filled or not \mbox{\Hypertarget{class_appointment_slot_a0d38e94c39e8c62ca9f164959db4cf3c}\label{class_appointment_slot_a0d38e94c39e8c62ca9f164959db4cf3c}} 
+\index{AppointmentSlot@{AppointmentSlot}!getRefNum@{getRefNum}}
+\index{getRefNum@{getRefNum}!AppointmentSlot@{AppointmentSlot}}
+\doxysubsubsection{\texorpdfstring{getRefNum()}{getRefNum()}}
+{\footnotesize\ttfamily int Appointment\+Slot\+::get\+Ref\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieve the reference number of the slot. 
+
+\begin{DoxyReturn}{Returns}
+int the reference number of the slot
+\end{DoxyReturn}
+Return the reference number of the slot \mbox{\Hypertarget{class_appointment_slot_ae1bc0c4c7cdfd6ff0e19dac860ac1795}\label{class_appointment_slot_ae1bc0c4c7cdfd6ff0e19dac860ac1795}} 
 \index{AppointmentSlot@{AppointmentSlot}!getStartTime@{getStartTime}}
 \index{getStartTime@{getStartTime}!AppointmentSlot@{AppointmentSlot}}
 \doxysubsubsection{\texorpdfstring{getStartTime()}{getStartTime()}}
@@ -58,13 +131,13 @@ Retrieve the ending time of the slot.
 Retrieve the starting time of the slot. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} the starting time of the \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} 
+\mbox{\hyperlink{struct_date_time}{Date\+Time}} the starting time of the \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_appointment_slot_a2ca48b95d7b9f578f2f23f6d86a7f069}\label{class_appointment_slot_a2ca48b95d7b9f578f2f23f6d86a7f069}} 
+Return the starting time of the slot \mbox{\Hypertarget{class_appointment_slot_a2ca48b95d7b9f578f2f23f6d86a7f069}\label{class_appointment_slot_a2ca48b95d7b9f578f2f23f6d86a7f069}} 
 \index{AppointmentSlot@{AppointmentSlot}!setEndTime@{setEndTime}}
 \index{setEndTime@{setEndTime}!AppointmentSlot@{AppointmentSlot}}
 \doxysubsubsection{\texorpdfstring{setEndTime()}{setEndTime()}}
-{\footnotesize\ttfamily void Appointment\+Slot\+::set\+End\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{end\+Time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Appointment\+Slot\+::set\+End\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{new\+End\+Time }\end{DoxyParamCaption})}
 
 
 
@@ -76,13 +149,13 @@ Set the ending time of the slot.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+none
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_appointment_slot_a4e4bad089724bdecf9c71332b34ae50f}\label{class_appointment_slot_a4e4bad089724bdecf9c71332b34ae50f}} 
+Set the ending time of the slot \mbox{\Hypertarget{class_appointment_slot_a4e4bad089724bdecf9c71332b34ae50f}\label{class_appointment_slot_a4e4bad089724bdecf9c71332b34ae50f}} 
 \index{AppointmentSlot@{AppointmentSlot}!setStartTime@{setStartTime}}
 \index{setStartTime@{setStartTime}!AppointmentSlot@{AppointmentSlot}}
 \doxysubsubsection{\texorpdfstring{setStartTime()}{setStartTime()}}
-{\footnotesize\ttfamily void Appointment\+Slot\+::set\+Start\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{start\+Time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Appointment\+Slot\+::set\+Start\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{new\+Start\+Time }\end{DoxyParamCaption})}
 
 
 
@@ -94,10 +167,11 @@ Set the starting time of the slot.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+none
 \end{DoxyReturn}
+Set the starting time of the slot 
 
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Appointment\+Slot.\+h\end{DoxyCompactItemize}
+Appointment\+Slot.\+h\item 
+Appointment\+Slot.\+cpp\end{DoxyCompactItemize}

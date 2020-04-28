@@ -12,6 +12,10 @@ This class defines the object to store patient data.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{class_patient_af34d7593aee6534e995703883265583c}{Patient}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_patient}{Patient}}\+:\+: \mbox{\hyperlink{class_patient}{Patient}} object default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_patient_a0176f1f88a262d4010e5dafdbde3e6a9}{Patient}} (string new\+Name, string new\+Gender, string new\+Race, string new\+Patient\+Type, long new\+Ksu\+ID, \mbox{\hyperlink{struct_date}{Date}} new\+Dob)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_patient}{Patient}}\+:\+: \mbox{\hyperlink{class_patient}{Patient}} object. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_patient_a69910a374b455ce5c5f148a93279d9cf}{get\+Name}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the name of the patient. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_patient_a09f45cf60eb7d32b63e4002f6215c57f}{get\+Gender}} ()
@@ -22,20 +26,23 @@ string \mbox{\hyperlink{class_patient_a74ff6cd63c820abe325b6255723074f0}{get\+Pa
 \begin{DoxyCompactList}\small\item\em Retrieve the type of the patient. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{struct_date}{Date}} \mbox{\hyperlink{class_patient_a1ef2aa700d64adfc6dae6e32b2f2325c}{get\+Dob}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the date of birth of the patient. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_patient_a86847067f9dfc59e5a86229a5a9e6ea8}{get\+K\+S\+U\+ID}} ()
+long \mbox{\hyperlink{class_patient_aab5bed22e4ba0a51571d0b169acb1b03}{get\+K\+S\+U\+ID}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the K\+SU ID of the patient. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_patient_ae2a86b85bcc96d524aa3cdf8e3b4eb1d}{set\+Patient\+Type}} (string patienttype)
 \begin{DoxyCompactList}\small\item\em Set the type of the patient. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_patient_a2e46826f0c95fdf8f6f1f4f685176658}{set\+Name}} (string name)
 \begin{DoxyCompactList}\small\item\em Set the full name of the patient. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_patient_a1db1579eb65b1c33e01319cd96ed5249}{set\+K\+S\+U\+ID}} (int ksu\+ID)
+void \mbox{\hyperlink{class_patient_aca4cb39fa95e4373ca4323d353d5db48}{set\+K\+S\+U\+ID}} (long ksu\+ID)
 \begin{DoxyCompactList}\small\item\em Set the K\+SU ID of the patient. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_patient_a83af64a0500ef639cd11a610c1fce357}{set\+Gender}} (string gender)
 \begin{DoxyCompactList}\small\item\em Set the gender of the patient. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_patient_a24138f2d4c26928048a5af538a18d7fb}{set\+Dob}} (\mbox{\hyperlink{struct_date}{Date}} dob)
 \begin{DoxyCompactList}\small\item\em Set the date of birth of the patient. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_patient_ab1f73f7a754d309d4cdff9a38784819c}{set\+Race}} (string race)
-\begin{DoxyCompactList}\small\item\em Set the race of the patient. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set the race of the patient. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_patient_a8a88ae401558574e5ffbd6da93b251d4}\label{class_patient_a8a88ae401558574e5ffbd6da93b251d4}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{class_patient}{Patient}} a)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -49,6 +56,44 @@ Alex Sweeney
 \end{DoxyVersion}
 Created on Sun Mar 29 2020 
 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_patient_af34d7593aee6534e995703883265583c}\label{class_patient_af34d7593aee6534e995703883265583c}} 
+\index{Patient@{Patient}!Patient@{Patient}}
+\index{Patient@{Patient}!Patient@{Patient}}
+\doxysubsubsection{\texorpdfstring{Patient()}{Patient()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Patient\+::\+Patient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_patient}{Patient}}\+:\+: \mbox{\hyperlink{class_patient}{Patient}} object default constructor. 
+
+\mbox{\Hypertarget{class_patient_a0176f1f88a262d4010e5dafdbde3e6a9}\label{class_patient_a0176f1f88a262d4010e5dafdbde3e6a9}} 
+\index{Patient@{Patient}!Patient@{Patient}}
+\index{Patient@{Patient}!Patient@{Patient}}
+\doxysubsubsection{\texorpdfstring{Patient()}{Patient()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Patient\+::\+Patient (\begin{DoxyParamCaption}\item[{string}]{new\+Name,  }\item[{string}]{new\+Gender,  }\item[{string}]{new\+Race,  }\item[{string}]{new\+Patient\+Type,  }\item[{long}]{new\+Ksu\+ID,  }\item[{\mbox{\hyperlink{struct_date}{Date}}}]{new\+Dob }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_patient}{Patient}}\+:\+: \mbox{\hyperlink{class_patient}{Patient}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Name} & \\
+\hline
+{\em new\+Gender} & \\
+\hline
+{\em new\+Race} & \\
+\hline
+{\em new\+Patient\+Type} & \\
+\hline
+{\em new\+Ksu\+ID} & \\
+\hline
+{\em new\+Dob} & \\
+\hline
+\end{DoxyParams}
+
+
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_patient_a1ef2aa700d64adfc6dae6e32b2f2325c}\label{class_patient_a1ef2aa700d64adfc6dae6e32b2f2325c}} 
 \index{Patient@{Patient}!getDob@{getDob}}
@@ -61,9 +106,9 @@ Created on Sun Mar 29 2020
 Retrieve the date of birth of the patient. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_date}{Date}} The date of birth of the patient 
+\mbox{\hyperlink{struct_date}{Date}} The date of birth of the patient
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a09f45cf60eb7d32b63e4002f6215c57f}\label{class_patient_a09f45cf60eb7d32b63e4002f6215c57f}} 
+Return the patient\textquotesingle{}s date of birth \mbox{\Hypertarget{class_patient_a09f45cf60eb7d32b63e4002f6215c57f}\label{class_patient_a09f45cf60eb7d32b63e4002f6215c57f}} 
 \index{Patient@{Patient}!getGender@{getGender}}
 \index{getGender@{getGender}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{getGender()}{getGender()}}
@@ -74,22 +119,22 @@ Retrieve the date of birth of the patient.
 Retrieve the gender of the patient. 
 
 \begin{DoxyReturn}{Returns}
-string The gender of the patient 
+string The gender of the patient
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a86847067f9dfc59e5a86229a5a9e6ea8}\label{class_patient_a86847067f9dfc59e5a86229a5a9e6ea8}} 
+Return the patient\textquotesingle{}s gender \mbox{\Hypertarget{class_patient_aab5bed22e4ba0a51571d0b169acb1b03}\label{class_patient_aab5bed22e4ba0a51571d0b169acb1b03}} 
 \index{Patient@{Patient}!getKSUID@{getKSUID}}
 \index{getKSUID@{getKSUID}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{getKSUID()}{getKSUID()}}
-{\footnotesize\ttfamily int Patient\+::get\+K\+S\+U\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily long Patient\+::get\+K\+S\+U\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 Retrieve the K\+SU ID of the patient. 
 
 \begin{DoxyReturn}{Returns}
-int The K\+SU ID of the patient 
+long The K\+SU ID of the patient
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a69910a374b455ce5c5f148a93279d9cf}\label{class_patient_a69910a374b455ce5c5f148a93279d9cf}} 
+Return the patient\textquotesingle{}s K\+SU ID \mbox{\Hypertarget{class_patient_a69910a374b455ce5c5f148a93279d9cf}\label{class_patient_a69910a374b455ce5c5f148a93279d9cf}} 
 \index{Patient@{Patient}!getName@{getName}}
 \index{getName@{getName}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
@@ -100,9 +145,9 @@ int The K\+SU ID of the patient
 Retrieve the name of the patient. 
 
 \begin{DoxyReturn}{Returns}
-string The full name of the patient 
+string The full name of the patient
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a74ff6cd63c820abe325b6255723074f0}\label{class_patient_a74ff6cd63c820abe325b6255723074f0}} 
+Return the patient\textquotesingle{}s name \mbox{\Hypertarget{class_patient_a74ff6cd63c820abe325b6255723074f0}\label{class_patient_a74ff6cd63c820abe325b6255723074f0}} 
 \index{Patient@{Patient}!getPatientType@{getPatientType}}
 \index{getPatientType@{getPatientType}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{getPatientType()}{getPatientType()}}
@@ -113,9 +158,9 @@ string The full name of the patient
 Retrieve the type of the patient. 
 
 \begin{DoxyReturn}{Returns}
-string The type of the patient 
+string The type of the patient
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a6a7acd37be18d10dc278e9a73be88a82}\label{class_patient_a6a7acd37be18d10dc278e9a73be88a82}} 
+Return the patient\textquotesingle{}s type \mbox{\Hypertarget{class_patient_a6a7acd37be18d10dc278e9a73be88a82}\label{class_patient_a6a7acd37be18d10dc278e9a73be88a82}} 
 \index{Patient@{Patient}!getRace@{getRace}}
 \index{getRace@{getRace}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{getRace()}{getRace()}}
@@ -126,13 +171,13 @@ string The type of the patient
 Retrieve the race of the patient. 
 
 \begin{DoxyReturn}{Returns}
-string The race of the patient 
+string The race of the patient
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a24138f2d4c26928048a5af538a18d7fb}\label{class_patient_a24138f2d4c26928048a5af538a18d7fb}} 
+Return the patient\textquotesingle{}s race \mbox{\Hypertarget{class_patient_a24138f2d4c26928048a5af538a18d7fb}\label{class_patient_a24138f2d4c26928048a5af538a18d7fb}} 
 \index{Patient@{Patient}!setDob@{setDob}}
 \index{setDob@{setDob}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{setDob()}{setDob()}}
-{\footnotesize\ttfamily void Patient\+::set\+Dob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date}{Date}}}]{dob }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Patient\+::set\+Dob (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date}{Date}}}]{new\+Dob }\end{DoxyParamCaption})}
 
 
 
@@ -144,13 +189,13 @@ Set the date of birth of the patient.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+none
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a83af64a0500ef639cd11a610c1fce357}\label{class_patient_a83af64a0500ef639cd11a610c1fce357}} 
+Set the patient\textquotesingle{}s date of birth \mbox{\Hypertarget{class_patient_a83af64a0500ef639cd11a610c1fce357}\label{class_patient_a83af64a0500ef639cd11a610c1fce357}} 
 \index{Patient@{Patient}!setGender@{setGender}}
 \index{setGender@{setGender}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{setGender()}{setGender()}}
-{\footnotesize\ttfamily void Patient\+::set\+Gender (\begin{DoxyParamCaption}\item[{string}]{gender }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Patient\+::set\+Gender (\begin{DoxyParamCaption}\item[{string}]{new\+Gender }\end{DoxyParamCaption})}
 
 
 
@@ -162,13 +207,13 @@ Set the gender of the patient.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+none
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a1db1579eb65b1c33e01319cd96ed5249}\label{class_patient_a1db1579eb65b1c33e01319cd96ed5249}} 
+Set the patient\textquotesingle{}s gender \mbox{\Hypertarget{class_patient_aca4cb39fa95e4373ca4323d353d5db48}\label{class_patient_aca4cb39fa95e4373ca4323d353d5db48}} 
 \index{Patient@{Patient}!setKSUID@{setKSUID}}
 \index{setKSUID@{setKSUID}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{setKSUID()}{setKSUID()}}
-{\footnotesize\ttfamily void Patient\+::set\+K\+S\+U\+ID (\begin{DoxyParamCaption}\item[{int}]{ksu\+ID }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Patient\+::set\+K\+S\+U\+ID (\begin{DoxyParamCaption}\item[{long}]{new\+Ksu\+ID }\end{DoxyParamCaption})}
 
 
 
@@ -180,13 +225,13 @@ Set the K\+SU ID of the patient.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+none
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_a2e46826f0c95fdf8f6f1f4f685176658}\label{class_patient_a2e46826f0c95fdf8f6f1f4f685176658}} 
+Set the patient\textquotesingle{}s K\+SU ID \mbox{\Hypertarget{class_patient_a2e46826f0c95fdf8f6f1f4f685176658}\label{class_patient_a2e46826f0c95fdf8f6f1f4f685176658}} 
 \index{Patient@{Patient}!setName@{setName}}
 \index{setName@{setName}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
-{\footnotesize\ttfamily void Patient\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Patient\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{new\+Name }\end{DoxyParamCaption})}
 
 
 
@@ -198,13 +243,13 @@ Set the full name of the patient.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+none
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_ae2a86b85bcc96d524aa3cdf8e3b4eb1d}\label{class_patient_ae2a86b85bcc96d524aa3cdf8e3b4eb1d}} 
+Set the patient\textquotesingle{}s name \mbox{\Hypertarget{class_patient_ae2a86b85bcc96d524aa3cdf8e3b4eb1d}\label{class_patient_ae2a86b85bcc96d524aa3cdf8e3b4eb1d}} 
 \index{Patient@{Patient}!setPatientType@{setPatientType}}
 \index{setPatientType@{setPatientType}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{setPatientType()}{setPatientType()}}
-{\footnotesize\ttfamily void Patient\+::set\+Patient\+Type (\begin{DoxyParamCaption}\item[{string}]{patienttype }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Patient\+::set\+Patient\+Type (\begin{DoxyParamCaption}\item[{string}]{new\+Patient\+Type }\end{DoxyParamCaption})}
 
 
 
@@ -216,13 +261,13 @@ Set the type of the patient.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+none
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_patient_ab1f73f7a754d309d4cdff9a38784819c}\label{class_patient_ab1f73f7a754d309d4cdff9a38784819c}} 
+Set the patient\textquotesingle{}s type \mbox{\Hypertarget{class_patient_ab1f73f7a754d309d4cdff9a38784819c}\label{class_patient_ab1f73f7a754d309d4cdff9a38784819c}} 
 \index{Patient@{Patient}!setRace@{setRace}}
 \index{setRace@{setRace}!Patient@{Patient}}
 \doxysubsubsection{\texorpdfstring{setRace()}{setRace()}}
-{\footnotesize\ttfamily void Patient\+::set\+Race (\begin{DoxyParamCaption}\item[{string}]{race }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Patient\+::set\+Race (\begin{DoxyParamCaption}\item[{string}]{new\+Race }\end{DoxyParamCaption})}
 
 
 
@@ -234,10 +279,11 @@ Set the race of the patient.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+none
 \end{DoxyReturn}
+Set the patient\textquotesingle{}s race 
 
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Patient.\+h\end{DoxyCompactItemize}
+Patient.\+h\item 
+Patient.\+cpp\end{DoxyCompactItemize}

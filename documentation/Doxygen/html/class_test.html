@@ -68,15 +68,6 @@ $(function() {
 <div class="title">Test Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="dynheader">
-Inheritance diagram for Test:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="class_test.png" usemap="#Test_map" alt=""/>
-  <map id="Test_map" name="Test_map">
-<area href="class_test_result.html" alt="TestResult" shape="rect" coords="0,56,69,80"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -125,6 +116,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="class_test.html">Test</a> object. </p>
+<p>Construct a new <a class="el" href="class_test.html">Test</a>:: <a class="el" href="class_test.html">Test</a> object default constructor.</p>
 
 </div>
 </div>
@@ -138,19 +130,19 @@ Public Member Functions</h2></td></tr>
           <td class="memname">Test::Test </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_date_time.html">DateTime</a>&#160;</td>
-          <td class="paramname"><em>timePerformed</em>, </td>
+          <td class="paramname"><em>newTimePerformed</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="class_patient.html">Patient</a>&#160;</td>
-          <td class="paramname"><em>patient</em>, </td>
+          <td class="paramname"><em>newPatient</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
+          <td class="paramname"><em>newType</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -161,11 +153,15 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construct a new <a class="el" href="class_test.html">Test</a> object. </p>
+<p>Construct a new <a class="el" href="class_test.html">Test</a>:: <a class="el" href="class_test.html">Test</a> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">timePerformed</td><td></td></tr>
     <tr><td class="paramname">patient</td><td></td></tr>
     <tr><td class="paramname">type</td><td></td></tr>
+    <tr><td class="paramname">newTimePerformed</td><td></td></tr>
+    <tr><td class="paramname">newPatient</td><td></td></tr>
+    <tr><td class="paramname">newType</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -188,6 +184,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destroy the <a class="el" href="class_test.html">Test</a> object. </p>
+<p>Destroy the <a class="el" href="class_test.html">Test</a>:: <a class="el" href="class_test.html">Test</a> object.</p>
 
 </div>
 </div>
@@ -208,7 +205,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the <a class="el" href="class_patient.html" title="This class defines the object to store patient data.">Patient</a> object. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_patient.html" title="This class defines the object to store patient data.">Patient</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_patient.html" title="This class defines the object to store patient data.">Patient</a></dd></dl>
+<p>Get the <a class="el" href="class_patient.html" title="This class defines the object to store patient data.">Patient</a> object </p>
 
 </div>
 </div>
@@ -228,7 +226,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the Time Performed object. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_date_time.html">DateTime</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_date_time.html">DateTime</a></dd></dl>
+<p>Get the Time Performed object </p>
 
 </div>
 </div>
@@ -248,7 +247,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the Type object. </p>
-<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>string</dd></dl>
+<p>Get the Type object </p>
 
 </div>
 </div>
@@ -262,7 +262,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Test::setPatient </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_patient.html">Patient</a>&#160;</td>
-          <td class="paramname"><em>patient</em></td><td>)</td>
+          <td class="paramname"><em>newPatient</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -275,6 +275,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>Set the <a class="el" href="class_patient.html" title="This class defines the object to store patient data.">Patient</a> object </p>
 
 </div>
 </div>
@@ -288,7 +289,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Test::setTimePerformed </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_date_time.html">DateTime</a>&#160;</td>
-          <td class="paramname"><em>time</em></td><td>)</td>
+          <td class="paramname"><em>newTime</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -301,6 +302,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>Set the Time Performed object </p>
 
 </div>
 </div>
@@ -314,7 +316,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Test::setType </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
+          <td class="paramname"><em>newType</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -327,11 +329,13 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>Set the Type object </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_test_8h_source.html">Test.h</a></li>
+<li>Test.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

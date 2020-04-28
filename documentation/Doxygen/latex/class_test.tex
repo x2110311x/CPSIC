@@ -1,11 +1,5 @@
 \hypertarget{class_test}{}\doxysection{Test Class Reference}
 \label{class_test}\index{Test@{Test}}
-Inheritance diagram for Test\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{class_test}
-\end{center}
-\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,15 +34,17 @@ void \mbox{\hyperlink{class_test_a454ce967c486a23f1bde06debf640756}{set\+Type}} 
 
 Construct a new \mbox{\hyperlink{class_test}{Test}} object. 
 
-\mbox{\Hypertarget{class_test_a9b3e5ee80c2c4e7ed7fe7571dc8f025c}\label{class_test_a9b3e5ee80c2c4e7ed7fe7571dc8f025c}} 
+Construct a new \mbox{\hyperlink{class_test}{Test}}\+:\+: \mbox{\hyperlink{class_test}{Test}} object default constructor.\mbox{\Hypertarget{class_test_a9b3e5ee80c2c4e7ed7fe7571dc8f025c}\label{class_test_a9b3e5ee80c2c4e7ed7fe7571dc8f025c}} 
 \index{Test@{Test}!Test@{Test}}
 \index{Test@{Test}!Test@{Test}}
 \doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Test\+::\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{time\+Performed,  }\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{patient,  }\item[{string}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Test\+::\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{new\+Time\+Performed,  }\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{new\+Patient,  }\item[{string}]{new\+Type }\end{DoxyParamCaption})}
 
 
 
 Construct a new \mbox{\hyperlink{class_test}{Test}} object. 
+
+Construct a new \mbox{\hyperlink{class_test}{Test}}\+:\+: \mbox{\hyperlink{class_test}{Test}} object.
 
 
 \begin{DoxyParams}{Parameters}
@@ -57,6 +53,12 @@ Construct a new \mbox{\hyperlink{class_test}{Test}} object.
 {\em patient} & \\
 \hline
 {\em type} & \\
+\hline
+{\em new\+Time\+Performed} & \\
+\hline
+{\em new\+Patient} & \\
+\hline
+{\em new\+Type} & \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_test_a2b0a62f1e667bbe8d8cb18d785bfa991}\label{class_test_a2b0a62f1e667bbe8d8cb18d785bfa991}} 
@@ -69,7 +71,7 @@ Construct a new \mbox{\hyperlink{class_test}{Test}} object.
 
 Destroy the \mbox{\hyperlink{class_test}{Test}} object. 
 
-
+Destroy the \mbox{\hyperlink{class_test}{Test}}\+:\+: \mbox{\hyperlink{class_test}{Test}} object.
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_test_a0cacc96636af121487cdbcdebce7fb35}\label{class_test_a0cacc96636af121487cdbcdebce7fb35}} 
@@ -83,9 +85,9 @@ Destroy the \mbox{\hyperlink{class_test}{Test}} object.
 Get the \mbox{\hyperlink{class_patient}{Patient}} object. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{class_patient}{Patient}} 
+\mbox{\hyperlink{class_patient}{Patient}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_test_aca9c0ed1cebe92b89cdf4bb43b2c670f}\label{class_test_aca9c0ed1cebe92b89cdf4bb43b2c670f}} 
+Get the \mbox{\hyperlink{class_patient}{Patient}} object \mbox{\Hypertarget{class_test_aca9c0ed1cebe92b89cdf4bb43b2c670f}\label{class_test_aca9c0ed1cebe92b89cdf4bb43b2c670f}} 
 \index{Test@{Test}!getTimePerformed@{getTimePerformed}}
 \index{getTimePerformed@{getTimePerformed}!Test@{Test}}
 \doxysubsubsection{\texorpdfstring{getTimePerformed()}{getTimePerformed()}}
@@ -96,9 +98,9 @@ Get the \mbox{\hyperlink{class_patient}{Patient}} object.
 Get the Time Performed object. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} 
+\mbox{\hyperlink{struct_date_time}{Date\+Time}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_test_aec1a6e5c564301ff00f52e73734ae41b}\label{class_test_aec1a6e5c564301ff00f52e73734ae41b}} 
+Get the Time Performed object \mbox{\Hypertarget{class_test_aec1a6e5c564301ff00f52e73734ae41b}\label{class_test_aec1a6e5c564301ff00f52e73734ae41b}} 
 \index{Test@{Test}!getType@{getType}}
 \index{getType@{getType}!Test@{Test}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}
@@ -109,13 +111,13 @@ Get the Time Performed object.
 Get the Type object. 
 
 \begin{DoxyReturn}{Returns}
-string 
+string
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_test_a806562aa532bb40502b6be214a834df7}\label{class_test_a806562aa532bb40502b6be214a834df7}} 
+Get the Type object \mbox{\Hypertarget{class_test_a806562aa532bb40502b6be214a834df7}\label{class_test_a806562aa532bb40502b6be214a834df7}} 
 \index{Test@{Test}!setPatient@{setPatient}}
 \index{setPatient@{setPatient}!Test@{Test}}
 \doxysubsubsection{\texorpdfstring{setPatient()}{setPatient()}}
-{\footnotesize\ttfamily void Test\+::set\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{patient }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Test\+::set\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{new\+Patient }\end{DoxyParamCaption})}
 
 
 
@@ -126,11 +128,11 @@ Set the \mbox{\hyperlink{class_patient}{Patient}} object.
 {\em patient} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_test_a5e93a23042e5a786409757b91f1a40c5}\label{class_test_a5e93a23042e5a786409757b91f1a40c5}} 
+Set the \mbox{\hyperlink{class_patient}{Patient}} object \mbox{\Hypertarget{class_test_a5e93a23042e5a786409757b91f1a40c5}\label{class_test_a5e93a23042e5a786409757b91f1a40c5}} 
 \index{Test@{Test}!setTimePerformed@{setTimePerformed}}
 \index{setTimePerformed@{setTimePerformed}!Test@{Test}}
 \doxysubsubsection{\texorpdfstring{setTimePerformed()}{setTimePerformed()}}
-{\footnotesize\ttfamily void Test\+::set\+Time\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Test\+::set\+Time\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{new\+Time }\end{DoxyParamCaption})}
 
 
 
@@ -141,11 +143,11 @@ Set the Time Performed object.
 {\em time} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_test_a454ce967c486a23f1bde06debf640756}\label{class_test_a454ce967c486a23f1bde06debf640756}} 
+Set the Time Performed object \mbox{\Hypertarget{class_test_a454ce967c486a23f1bde06debf640756}\label{class_test_a454ce967c486a23f1bde06debf640756}} 
 \index{Test@{Test}!setType@{setType}}
 \index{setType@{setType}!Test@{Test}}
 \doxysubsubsection{\texorpdfstring{setType()}{setType()}}
-{\footnotesize\ttfamily void Test\+::set\+Type (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Test\+::set\+Type (\begin{DoxyParamCaption}\item[{string}]{new\+Type }\end{DoxyParamCaption})}
 
 
 
@@ -156,8 +158,9 @@ Set the Type object.
 {\em type} & \\
 \hline
 \end{DoxyParams}
+Set the Type object 
 
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_test_8h}{Test.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_test_8h}{Test.\+h}}\item 
+Test.\+cpp\end{DoxyCompactItemize}

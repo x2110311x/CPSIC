@@ -1,79 +1,70 @@
 \hypertarget{class_personnel}{}\doxysection{Personnel Class Reference}
 \label{class_personnel}\index{Personnel@{Personnel}}
-
-
-Defines the object of an employee of the K\+SU health services that provides care.  
-
-
-
-
-{\ttfamily \#include $<$Personnel.\+h$>$}
-
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_personnel_a96840b35bd30d6010480a32cd296068b}\label{class_personnel_a96840b35bd30d6010480a32cd296068b}} 
+\mbox{\hyperlink{class_personnel_a96840b35bd30d6010480a32cd296068b}{Personnel}} ()
+\begin{DoxyCompactList}\small\item\em $<$constructors \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_personnel_ae1608052c9f94c208f09f1128d20fb91}\label{class_personnel_ae1608052c9f94c208f09f1128d20fb91}} 
+\mbox{\hyperlink{class_personnel_ae1608052c9f94c208f09f1128d20fb91}{Personnel}} (string name, string type, long id, vector$<$ \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} $>$ working\+Times)
+\begin{DoxyCompactList}\small\item\em Accessors. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_personnel_afa3b060fdfe99c2b5b5a639f8f23af36}{get\+Name}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the name of the personnel. \end{DoxyCompactList}\item 
 string \mbox{\hyperlink{class_personnel_adb147189db398cfba7af263375976810}{get\+Type}} ()
-\begin{DoxyCompactList}\small\item\em Retrieve the type of the personnel. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_personnel_a2e591b54342e4e6231188a7edfb5bc29}{get\+Employee\+Id}} ()
-\begin{DoxyCompactList}\small\item\em Retrieve the id of the personnel. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} $\ast$ \mbox{\hyperlink{class_personnel_afe87cfc23870c19edbc9b0b9b2a076c7}{get\+Working\+Times}} ()
-\begin{DoxyCompactList}\small\item\em Retrieve the schedule of the personnel. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_personnel_a0ebbd3ea047e1c88d9385c92a01b9038}{set\+Type}} (string type)
-\begin{DoxyCompactList}\small\item\em Set the type of the personnel. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_personnel_a1b8bbd0a1bbd19b527732f1b5e4ced78}{set\+Name}} (string name)
-\begin{DoxyCompactList}\small\item\em Set the name of the personnel. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_personnel_a46158f3ea7b0bfe08df92d80f8f6e28e}{set\+Employee\+Id}} (int employee\+ID)
-\begin{DoxyCompactList}\small\item\em Set the id of the personnel. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_personnel_a6e1c9dcfd49f56b6f0bde128ec2e0725}{add\+Working\+Time}} (\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} work\+Time)
-\begin{DoxyCompactList}\small\item\em Add a working time of the personnel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retrieve the type of personnel. \end{DoxyCompactList}\item 
+long \mbox{\hyperlink{class_personnel_ad76cb409f1e707c2f00f2f37e76b0962}{get\+Employee\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Retrieve the ID of the personnel. \end{DoxyCompactList}\item 
+vector$<$ \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} $>$ \mbox{\hyperlink{class_personnel_a3d16e0da8e79c06ba7b022693e5b9f65}{get\+Working\+Times}} ()
+\begin{DoxyCompactList}\small\item\em Retrieve a vector of working times of the personnel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_personnel_a45b23dbd6b3093626cebda24109f96fa}{set\+Type}} (string t)
+\begin{DoxyCompactList}\small\item\em Set the Type of personnel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_personnel_a2f192a49707452e15822c0022f981ecb}{set\+Name}} (string n)
+\begin{DoxyCompactList}\small\item\em Set the Name of the personnel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_personnel_aa90d2e1bd48f8ae590d54c0feaa0aaab}{set\+Employee\+Id}} (long id)
+\begin{DoxyCompactList}\small\item\em set the ID of the personnel \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_personnel_ad2b26e215ad0e7a94fc0638ee2028034}{add\+Working\+Time}} (\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} w)
+\begin{DoxyCompactList}\small\item\em Add an appointment slot to the working times of the personnel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_personnel_a844a621ee9e6f80f5a6329caa4e28689}{remove\+Working\+Time}} (\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} w)
+\begin{DoxyCompactList}\small\item\em Remove an appointment slot from the working times of the personnel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_personnel_ae35f7b7a2ed24212c9748c76f85b5e4f}\label{class_personnel_ae35f7b7a2ed24212c9748c76f85b5e4f}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{class_personnel}{Personnel}} a)
+\end{DoxyCompactItemize}
 
-
-\doxysubsection{Detailed Description}
-Defines the object of an employee of the K\+SU health services that provides care. 
-
-\begin{DoxyAuthor}{Author}
-Alex Sweeney
-\end{DoxyAuthor}
-\begin{DoxyVersion}{Version}
-1.\+0
-\end{DoxyVersion}
-Created on Sun Mar 29 2020 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_personnel_a6e1c9dcfd49f56b6f0bde128ec2e0725}\label{class_personnel_a6e1c9dcfd49f56b6f0bde128ec2e0725}} 
+\mbox{\Hypertarget{class_personnel_ad2b26e215ad0e7a94fc0638ee2028034}\label{class_personnel_ad2b26e215ad0e7a94fc0638ee2028034}} 
 \index{Personnel@{Personnel}!addWorkingTime@{addWorkingTime}}
 \index{addWorkingTime@{addWorkingTime}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{addWorkingTime()}{addWorkingTime()}}
-{\footnotesize\ttfamily void Personnel\+::add\+Working\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{work\+Time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Personnel\+::add\+Working\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{w }\end{DoxyParamCaption})}
 
 
 
-Add a working time of the personnel. 
+Add an appointment slot to the working times of the personnel. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em work\+Time} & The working time of the personnel \\
+{\em \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}} & The appointment slot that will be added to the working times of the personnel \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+None
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_personnel_a2e591b54342e4e6231188a7edfb5bc29}\label{class_personnel_a2e591b54342e4e6231188a7edfb5bc29}} 
+Add a Working Time object to a vector \mbox{\Hypertarget{class_personnel_ad76cb409f1e707c2f00f2f37e76b0962}\label{class_personnel_ad76cb409f1e707c2f00f2f37e76b0962}} 
 \index{Personnel@{Personnel}!getEmployeeId@{getEmployeeId}}
 \index{getEmployeeId@{getEmployeeId}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{getEmployeeId()}{getEmployeeId()}}
-{\footnotesize\ttfamily int Personnel\+::get\+Employee\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily long Personnel\+::get\+Employee\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Retrieve the id of the personnel. 
+Retrieve the ID of the personnel. 
 
 \begin{DoxyReturn}{Returns}
-int The id of the personnel 
+long The ID of the personnel
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_personnel_afa3b060fdfe99c2b5b5a639f8f23af36}\label{class_personnel_afa3b060fdfe99c2b5b5a639f8f23af36}} 
+get the Employee ID object \mbox{\Hypertarget{class_personnel_afa3b060fdfe99c2b5b5a639f8f23af36}\label{class_personnel_afa3b060fdfe99c2b5b5a639f8f23af36}} 
 \index{Personnel@{Personnel}!getName@{getName}}
 \index{getName@{getName}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{getName()}{getName()}}
@@ -84,9 +75,9 @@ int The id of the personnel
 Retrieve the name of the personnel. 
 
 \begin{DoxyReturn}{Returns}
-string The name of the personnel 
+String the name of the personnel
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_personnel_adb147189db398cfba7af263375976810}\label{class_personnel_adb147189db398cfba7af263375976810}} 
+get the Name object \mbox{\Hypertarget{class_personnel_adb147189db398cfba7af263375976810}\label{class_personnel_adb147189db398cfba7af263375976810}} 
 \index{Personnel@{Personnel}!getType@{getType}}
 \index{getType@{getType}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}
@@ -94,80 +85,99 @@ string The name of the personnel
 
 
 
-Retrieve the type of the personnel. 
+Retrieve the type of personnel. 
 
 \begin{DoxyReturn}{Returns}
-string The type of the personnel 
+String the type of personnel
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_personnel_afe87cfc23870c19edbc9b0b9b2a076c7}\label{class_personnel_afe87cfc23870c19edbc9b0b9b2a076c7}} 
+get the Type object \mbox{\Hypertarget{class_personnel_a3d16e0da8e79c06ba7b022693e5b9f65}\label{class_personnel_a3d16e0da8e79c06ba7b022693e5b9f65}} 
 \index{Personnel@{Personnel}!getWorkingTimes@{getWorkingTimes}}
 \index{getWorkingTimes@{getWorkingTimes}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{getWorkingTimes()}{getWorkingTimes()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}$\ast$ Personnel\+::get\+Working\+Times (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} $>$ Personnel\+::get\+Working\+Times (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Retrieve the schedule of the personnel. 
+Retrieve a vector of working times of the personnel. 
 
 \begin{DoxyReturn}{Returns}
-Appointment\+Slot$\ast$ The schedule of the personnel 
+Vector$<$\+Appointment\+Slot$>$ a vector of working times of the personnel changed this to vector modifiers
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_personnel_a46158f3ea7b0bfe08df92d80f8f6e28e}\label{class_personnel_a46158f3ea7b0bfe08df92d80f8f6e28e}} 
+get the Working Times vector \mbox{\Hypertarget{class_personnel_a844a621ee9e6f80f5a6329caa4e28689}\label{class_personnel_a844a621ee9e6f80f5a6329caa4e28689}} 
+\index{Personnel@{Personnel}!removeWorkingTime@{removeWorkingTime}}
+\index{removeWorkingTime@{removeWorkingTime}!Personnel@{Personnel}}
+\doxysubsubsection{\texorpdfstring{removeWorkingTime()}{removeWorkingTime()}}
+{\footnotesize\ttfamily void Personnel\+::remove\+Working\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{w }\end{DoxyParamCaption})}
+
+
+
+Remove an appointment slot from the working times of the personnel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}} & The appointment slot that will be removed from the working times of the personnel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+None
+\end{DoxyReturn}
+Remove a Working Time object from a vector \mbox{\Hypertarget{class_personnel_aa90d2e1bd48f8ae590d54c0feaa0aaab}\label{class_personnel_aa90d2e1bd48f8ae590d54c0feaa0aaab}} 
 \index{Personnel@{Personnel}!setEmployeeId@{setEmployeeId}}
 \index{setEmployeeId@{setEmployeeId}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{setEmployeeId()}{setEmployeeId()}}
-{\footnotesize\ttfamily void Personnel\+::set\+Employee\+Id (\begin{DoxyParamCaption}\item[{int}]{employee\+ID }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Personnel\+::set\+Employee\+Id (\begin{DoxyParamCaption}\item[{long}]{id }\end{DoxyParamCaption})}
 
 
 
-Set the id of the personnel. 
+set the ID of the personnel 
 
 
 \begin{DoxyParams}{Parameters}
-{\em employee\+ID} & The id of the personnel \\
+{\em long} & the ID number of the personnel \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+None
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_personnel_a1b8bbd0a1bbd19b527732f1b5e4ced78}\label{class_personnel_a1b8bbd0a1bbd19b527732f1b5e4ced78}} 
+Set the Employee ID object \mbox{\Hypertarget{class_personnel_a2f192a49707452e15822c0022f981ecb}\label{class_personnel_a2f192a49707452e15822c0022f981ecb}} 
 \index{Personnel@{Personnel}!setName@{setName}}
 \index{setName@{setName}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
-{\footnotesize\ttfamily void Personnel\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Personnel\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{n }\end{DoxyParamCaption})}
 
 
 
-Set the name of the personnel. 
+Set the Name of the personnel. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em name} & The name of the personnel \\
+{\em String} & The name of the personnel \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+None
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_personnel_a0ebbd3ea047e1c88d9385c92a01b9038}\label{class_personnel_a0ebbd3ea047e1c88d9385c92a01b9038}} 
+Set the Name object \mbox{\Hypertarget{class_personnel_a45b23dbd6b3093626cebda24109f96fa}\label{class_personnel_a45b23dbd6b3093626cebda24109f96fa}} 
 \index{Personnel@{Personnel}!setType@{setType}}
 \index{setType@{setType}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{setType()}{setType()}}
-{\footnotesize\ttfamily void Personnel\+::set\+Type (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Personnel\+::set\+Type (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
 
 
 
-Set the type of the personnel. 
+Set the Type of personnel. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em type} & The type of the personnel \\
+{\em String} & The type of the personnel \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-none 
+None
 \end{DoxyReturn}
+Set the Type object 
 
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Personnel.\+h\end{DoxyCompactItemize}
+Personnel.\+h\item 
+Personnel.\+cpp\end{DoxyCompactItemize}

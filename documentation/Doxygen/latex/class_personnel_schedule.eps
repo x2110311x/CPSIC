@@ -173,8 +173,8 @@
 
 boxfont setfont
 1 boundaspect scale
-(Schedule) cw
 (PersonnelSchedule) cw
+(Schedule) cw
 /boxwidth boxwidth marginwidth 2 mul add def
 /xspacing boxwidth distx add def
 /yspacing boxheight disty add def
@@ -186,12 +186,12 @@ boundx scalefactor div boundy scalefactor div scale
 
 % ----- classes -----
 
- (Schedule) 0.000000 1.000000 box
  (PersonnelSchedule) 0.000000 0.000000 box
+ (Schedule) 0.000000 1.000000 box
 
 % ----- relations -----
 
 dotted
-1 0.000000 0.250000 out
+0 0.000000 0.000000 out
 dotted
-0 0.000000 0.750000 in
+1 0.000000 1.000000 in

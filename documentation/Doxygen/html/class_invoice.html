@@ -69,19 +69,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>this class generates the invoices that are sent out to the patients. it also tracks whether the invoice is paid or not and what time it was created.  
- <a href="class_invoice.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="_invoice_8h_source.html">Invoice.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25d6ad261479340ac3775e21f03eef90"><td class="memItemLeft" align="right" valign="top"><a id="a25d6ad261479340ac3775e21f03eef90"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a25d6ad261479340ac3775e21f03eef90">Invoice</a> ()</td></tr>
-<tr class="memdesc:a25d6ad261479340ac3775e21f03eef90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an invoice object. <br /></td></tr>
+<tr class="memitem:a25d6ad261479340ac3775e21f03eef90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a25d6ad261479340ac3775e21f03eef90">Invoice</a> ()</td></tr>
 <tr class="separator:a25d6ad261479340ac3775e21f03eef90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a183dc926da1f27e56edec1d05ef84db6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a183dc926da1f27e56edec1d05ef84db6">Invoice</a> (<a class="el" href="class_visit.html">Visit</a> visit, int cost, <a class="el" href="struct_date_time.html">DateTime</a> dateCreated, bool paid)</td></tr>
-<tr class="memdesc:a183dc926da1f27e56edec1d05ef84db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an invoice object.  <a href="class_invoice.html#a183dc926da1f27e56edec1d05ef84db6">More...</a><br /></td></tr>
+<tr class="memitem:a183dc926da1f27e56edec1d05ef84db6"><td class="memItemLeft" align="right" valign="top"><a id="a183dc926da1f27e56edec1d05ef84db6"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Invoice</b> (<a class="el" href="class_visit.html">Visit</a> visit, int cost, <a class="el" href="struct_date_time.html">DateTime</a> dateCreated, bool paid)</td></tr>
 <tr class="separator:a183dc926da1f27e56edec1d05ef84db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31bb2d0f7450520197f720fcd689cb65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_visit.html">Visit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a31bb2d0f7450520197f720fcd689cb65">getVisit</a> ()</td></tr>
 <tr class="memdesc:a31bb2d0f7450520197f720fcd689cb65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the visit that corresponds with the invoice.  <a href="class_invoice.html#a31bb2d0f7450520197f720fcd689cb65">More...</a><br /></td></tr>
@@ -95,27 +90,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb188d5afeb00d8d4398cc1ba0db6836"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#afb188d5afeb00d8d4398cc1ba0db6836">isPaid</a> ()</td></tr>
 <tr class="memdesc:afb188d5afeb00d8d4398cc1ba0db6836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve if the invoice is paid.  <a href="class_invoice.html#afb188d5afeb00d8d4398cc1ba0db6836">More...</a><br /></td></tr>
 <tr class="separator:afb188d5afeb00d8d4398cc1ba0db6836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48b781ab54e7202cf454fa9deb62d8ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a48b781ab54e7202cf454fa9deb62d8ca">setVisit</a> (<a class="el" href="class_visit.html">Visit</a> visit)</td></tr>
-<tr class="memdesc:a48b781ab54e7202cf454fa9deb62d8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the visit of the invoice.  <a href="class_invoice.html#a48b781ab54e7202cf454fa9deb62d8ca">More...</a><br /></td></tr>
-<tr class="separator:a48b781ab54e7202cf454fa9deb62d8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bbc645b284232299d744a2e9c55e18b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a0bbc645b284232299d744a2e9c55e18b">setCost</a> (int cost)</td></tr>
-<tr class="memdesc:a0bbc645b284232299d744a2e9c55e18b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cost of the invoice.  <a href="class_invoice.html#a0bbc645b284232299d744a2e9c55e18b">More...</a><br /></td></tr>
-<tr class="separator:a0bbc645b284232299d744a2e9c55e18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a376b199b223f9f81d6d0577d4296a3b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a376b199b223f9f81d6d0577d4296a3b7">setDateCreated</a> (<a class="el" href="struct_date_time.html">DateTime</a> dateCreated)</td></tr>
-<tr class="memdesc:a376b199b223f9f81d6d0577d4296a3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the date the invoice was created.  <a href="class_invoice.html#a376b199b223f9f81d6d0577d4296a3b7">More...</a><br /></td></tr>
-<tr class="separator:a376b199b223f9f81d6d0577d4296a3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b21d2c1297d097cc1b040dbf82d1e34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a8b21d2c1297d097cc1b040dbf82d1e34">pay</a> (<a class="el" href="class_payment.html">Payment</a> &amp;payment)</td></tr>
-<tr class="memdesc:a8b21d2c1297d097cc1b040dbf82d1e34"><td class="mdescLeft">&#160;</td><td class="mdescRight">pay the invoice  <a href="class_invoice.html#a8b21d2c1297d097cc1b040dbf82d1e34">More...</a><br /></td></tr>
-<tr class="separator:a8b21d2c1297d097cc1b040dbf82d1e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7a97fe442a21e3ca672243ccbad36ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#af7a97fe442a21e3ca672243ccbad36ce">setVisit</a> (<a class="el" href="class_visit.html">Visit</a> v)</td></tr>
+<tr class="memdesc:af7a97fe442a21e3ca672243ccbad36ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the visit of the invoice.  <a href="class_invoice.html#af7a97fe442a21e3ca672243ccbad36ce">More...</a><br /></td></tr>
+<tr class="separator:af7a97fe442a21e3ca672243ccbad36ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b838c000cfa888edd85d6b9aff1912"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a12b838c000cfa888edd85d6b9aff1912">setCost</a> (int c)</td></tr>
+<tr class="memdesc:a12b838c000cfa888edd85d6b9aff1912"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the cost of the invoice.  <a href="class_invoice.html#a12b838c000cfa888edd85d6b9aff1912">More...</a><br /></td></tr>
+<tr class="separator:a12b838c000cfa888edd85d6b9aff1912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc0c841c02d1d3d3ee8d500de41b70c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#adc0c841c02d1d3d3ee8d500de41b70c3">setDateCreated</a> (<a class="el" href="struct_date_time.html">DateTime</a> d)</td></tr>
+<tr class="memdesc:adc0c841c02d1d3d3ee8d500de41b70c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the date the invoice was created.  <a href="class_invoice.html#adc0c841c02d1d3d3ee8d500de41b70c3">More...</a><br /></td></tr>
+<tr class="separator:adc0c841c02d1d3d3ee8d500de41b70c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a519d6d79fdd837cfb29533be7d430270"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_invoice.html#a519d6d79fdd837cfb29533be7d430270">pay</a> (int pay)</td></tr>
+<tr class="memdesc:a519d6d79fdd837cfb29533be7d430270"><td class="mdescLeft">&#160;</td><td class="mdescRight">pay the invoice  <a href="class_invoice.html#a519d6d79fdd837cfb29533be7d430270">More...</a><br /></td></tr>
+<tr class="separator:a519d6d79fdd837cfb29533be7d430270"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>this class generates the invoices that are sent out to the patients. it also tracks whether the invoice is paid or not and what time it was created. </p>
+<div class="textblock"><p>this class generates the invoices that are sent out to the patients. it also tracks whether the invoice is paid or not and what time it was created.</p>
 <dl class="section author"><dt>Author</dt><dd>Scott Caldwell</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0</dd></dl>
 <p>Created on Sun Mar 29 2020 </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a183dc926da1f27e56edec1d05ef84db6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a183dc926da1f27e56edec1d05ef84db6">&#9670;&nbsp;</a></span>Invoice()</h2>
+<a id="a25d6ad261479340ac3775e21f03eef90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25d6ad261479340ac3775e21f03eef90">&#9670;&nbsp;</a></span>Invoice()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,45 +118,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">Invoice::Invoice </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_visit.html">Visit</a>&#160;</td>
-          <td class="paramname"><em>visit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cost</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_date_time.html">DateTime</a>&#160;</td>
-          <td class="paramname"><em>dateCreated</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>paid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Construct an invoice object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">visit</td><td>The viist the invoice is associated with </td></tr>
-    <tr><td class="paramname">cost</td><td>The balance on the invoice </td></tr>
-    <tr><td class="paramname">dateCreated</td><td>The date and time the invoice was created </td></tr>
-    <tr><td class="paramname">paid</td><td>Whether or not it has been paid yet </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Invoice.cpp</p>
+<p>Declaration of <a class="el" href="class_invoice.html">Invoice</a> </p>
 
 </div>
 </div>
@@ -182,7 +145,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the cost of the invoice. </p>
-<dl class="section return"><dt>Returns</dt><dd>Int the cost of the invoice </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Int the cost of the invoice</dd></dl>
+<p>Get the Cost object </p>
 
 </div>
 </div>
@@ -202,7 +166,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the time the invoice was created. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_date_time.html">DateTime</a> the time the invoice was created </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_date_time.html">DateTime</a> the time the invoice was created</dd></dl>
+<p>Get the <a class="el" href="struct_date.html" title="Defines the Date objects for appointment slots and other classes, since C++ contains no built-in clas...">Date</a> Created object </p>
 
 </div>
 </div>
@@ -222,7 +187,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the visit that corresponds with the invoice. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_visit.html">Visit</a> that corresponds with the invoice </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_visit.html">Visit</a> that corresponds with the invoice</dd></dl>
+<p>Get the <a class="el" href="class_visit.html">Visit</a> object </p>
 
 </div>
 </div>
@@ -242,12 +208,13 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve if the invoice is paid. </p>
-<dl class="section return"><dt>Returns</dt><dd>Bool if the invoice is paid </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Bool if the invoice is paid</dd></dl>
+<p>Get the is Paid object </p>
 
 </div>
 </div>
-<a id="a8b21d2c1297d097cc1b040dbf82d1e34"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b21d2c1297d097cc1b040dbf82d1e34">&#9670;&nbsp;</a></span>pay()</h2>
+<a id="a519d6d79fdd837cfb29533be7d430270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a519d6d79fdd837cfb29533be7d430270">&#9670;&nbsp;</a></span>pay()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,8 +222,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void Invoice::pay </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_payment.html">Payment</a> &amp;&#160;</td>
-          <td class="paramname"><em>payment</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pay</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -265,16 +232,17 @@ Public Member Functions</h2></td></tr>
 <p>pay the invoice </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">payment</td><td>the amount paid toward the invoice </td></tr>
+    <tr><td class="paramname">Int</td><td>the amount paid toward the invoice </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
+<p>Set the Pay object </p>
 
 </div>
 </div>
-<a id="a0bbc645b284232299d744a2e9c55e18b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bbc645b284232299d744a2e9c55e18b">&#9670;&nbsp;</a></span>setCost()</h2>
+<a id="a12b838c000cfa888edd85d6b9aff1912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12b838c000cfa888edd85d6b9aff1912">&#9670;&nbsp;</a></span>setCost()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -283,7 +251,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Invoice::setCost </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>cost</em></td><td>)</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -292,16 +260,17 @@ Public Member Functions</h2></td></tr>
 <p>Set the cost of the invoice. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cost</td><td>the cost of the invoice </td></tr>
+    <tr><td class="paramname">Int</td><td>the cost of the invoice </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
+<p>Set the Cost object </p>
 
 </div>
 </div>
-<a id="a376b199b223f9f81d6d0577d4296a3b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a376b199b223f9f81d6d0577d4296a3b7">&#9670;&nbsp;</a></span>setDateCreated()</h2>
+<a id="adc0c841c02d1d3d3ee8d500de41b70c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc0c841c02d1d3d3ee8d500de41b70c3">&#9670;&nbsp;</a></span>setDateCreated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +279,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Invoice::setDateCreated </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_date_time.html">DateTime</a>&#160;</td>
-          <td class="paramname"><em>dateCreated</em></td><td>)</td>
+          <td class="paramname"><em>d</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -319,16 +288,17 @@ Public Member Functions</h2></td></tr>
 <p>Set the date the invoice was created. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dateCreated</td><td>the date the invoice was created </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_date_time.html">DateTime</a></td><td>the date the invoice was created </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
+<p>Set the <a class="el" href="struct_date.html" title="Defines the Date objects for appointment slots and other classes, since C++ contains no built-in clas...">Date</a> Created object </p>
 
 </div>
 </div>
-<a id="a48b781ab54e7202cf454fa9deb62d8ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48b781ab54e7202cf454fa9deb62d8ca">&#9670;&nbsp;</a></span>setVisit()</h2>
+<a id="af7a97fe442a21e3ca672243ccbad36ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7a97fe442a21e3ca672243ccbad36ce">&#9670;&nbsp;</a></span>setVisit()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -337,7 +307,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Invoice::setVisit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_visit.html">Visit</a>&#160;</td>
-          <td class="paramname"><em>visit</em></td><td>)</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -346,16 +316,18 @@ Public Member Functions</h2></td></tr>
 <p>Set the visit of the invoice. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">visit</td><td>the visit that corresponds with the invoice </td></tr>
+    <tr><td class="paramname"><a class="el" href="class_visit.html">Visit</a></td><td>the visit that corresponds with the invoice </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
+<p>Set the <a class="el" href="class_visit.html">Visit</a> object </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_invoice_8h_source.html">Invoice.h</a></li>
+<li>Invoice.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

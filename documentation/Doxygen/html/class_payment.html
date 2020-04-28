@@ -69,19 +69,12 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>This class keeps track of the payments made.  
- <a href="class_payment.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="_payment_8h_source.html">Payment.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0cc3df1030b4aae4007252798bbb782b"><td class="memItemLeft" align="right" valign="top"><a id="a0cc3df1030b4aae4007252798bbb782b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_payment.html#a0cc3df1030b4aae4007252798bbb782b">Payment</a> ()</td></tr>
-<tr class="memdesc:a0cc3df1030b4aae4007252798bbb782b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an payment object. <br /></td></tr>
-<tr class="separator:a0cc3df1030b4aae4007252798bbb782b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11bdc8b24e08b1413b55dab62c694072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_payment.html#a11bdc8b24e08b1413b55dab62c694072">Payment</a> (<a class="el" href="struct_date_time.html">DateTime</a> dateReceived, string type, int amount, <a class="el" href="class_invoice.html">Invoice</a> invoice)</td></tr>
-<tr class="memdesc:a11bdc8b24e08b1413b55dab62c694072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an payment object.  <a href="class_payment.html#a11bdc8b24e08b1413b55dab62c694072">More...</a><br /></td></tr>
+<tr class="memitem:a11bdc8b24e08b1413b55dab62c694072"><td class="memItemLeft" align="right" valign="top"><a id="a11bdc8b24e08b1413b55dab62c694072"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Payment</b> (<a class="el" href="struct_date_time.html">DateTime</a> dateReceived, string type, int amount, <a class="el" href="class_invoice.html">Invoice</a> invoice)</td></tr>
 <tr class="separator:a11bdc8b24e08b1413b55dab62c694072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affbe4231ff24e897c633d4d49412254b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_payment.html#affbe4231ff24e897c633d4d49412254b">getType</a> ()</td></tr>
 <tr class="memdesc:affbe4231ff24e897c633d4d49412254b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the type of payment.  <a href="class_payment.html#affbe4231ff24e897c633d4d49412254b">More...</a><br /></td></tr>
@@ -97,63 +90,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afa1ce975613cd328981afa0e2d08089b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class keeps track of the payments made. </p>
+<div class="textblock"><p>This class keeps track of the payments made</p>
 <dl class="section author"><dt>Author</dt><dd>Scott Caldwell</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0</dd></dl>
 <p>Created on Sun Mar 29 2020 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a11bdc8b24e08b1413b55dab62c694072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11bdc8b24e08b1413b55dab62c694072">&#9670;&nbsp;</a></span>Payment()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Payment::Payment </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_date_time.html">DateTime</a>&#160;</td>
-          <td class="paramname"><em>dateReceived</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>amount</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_invoice.html">Invoice</a>&#160;</td>
-          <td class="paramname"><em>invoice</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct an payment object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dateReceived</td><td>The date the payment was received </td></tr>
-    <tr><td class="paramname">type</td><td>The type of payment - Credit Card, cash, ceheck </td></tr>
-    <tr><td class="paramname">amount</td><td>The amount of the payment </td></tr>
-    <tr><td class="paramname">invoice</td><td>The invoice the payment is associated with </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad63d97e41ab918f1eb36a11f51dde731"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad63d97e41ab918f1eb36a11f51dde731">&#9670;&nbsp;</a></span>getAmount()</h2>
 
@@ -170,7 +111,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the amount of the payment. </p>
-<dl class="section return"><dt>Returns</dt><dd>Int the amount of the payment </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Int the amount of the payment</dd></dl>
+<p>Get the Amount object </p>
 
 </div>
 </div>
@@ -190,7 +132,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the date the payment was received. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_date_time.html">DateTime</a> the date the payment was received </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_date_time.html">DateTime</a> the date the payment was received</dd></dl>
+<p>Get the <a class="el" href="struct_date.html" title="Defines the Date objects for appointment slots and other classes, since C++ contains no built-in clas...">Date</a> Received object </p>
 
 </div>
 </div>
@@ -210,7 +153,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the invoice that corresponds with the payment. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_invoice.html" title="this class generates the invoices that are sent out to the patients. it also tracks whether the invoi...">Invoice</a> that corresponds with the payment </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_invoice.html">Invoice</a> that corresponds with the payment</dd></dl>
+<p>Get the <a class="el" href="class_invoice.html">Invoice</a> object </p>
 
 </div>
 </div>
@@ -230,12 +174,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the type of payment. </p>
-<dl class="section return"><dt>Returns</dt><dd>String the type of payment made </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>String the type of payment made</dd></dl>
+<p>Get the Type object </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_payment_8h_source.html">Payment.h</a></li>
+<li>Payment.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

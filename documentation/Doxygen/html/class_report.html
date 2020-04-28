@@ -76,12 +76,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae3150817fcf4ebf814358baf5bd72e8f"><td class="memItemLeft" align="right" valign="top"><a id="ae3150817fcf4ebf814358baf5bd72e8f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_report.html#ae3150817fcf4ebf814358baf5bd72e8f">Report</a> ()</td></tr>
-<tr class="memdesc:ae3150817fcf4ebf814358baf5bd72e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an report object. <br /></td></tr>
-<tr class="separator:ae3150817fcf4ebf814358baf5bd72e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada49c49f94c43aee7dccf146bb396480"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_report.html#ada49c49f94c43aee7dccf146bb396480">Report</a> (<a class="el" href="struct_date_time.html">DateTime</a> dateGenerated, string reportData)</td></tr>
-<tr class="memdesc:ada49c49f94c43aee7dccf146bb396480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an report object.  <a href="class_report.html#ada49c49f94c43aee7dccf146bb396480">More...</a><br /></td></tr>
+<tr class="memitem:ada49c49f94c43aee7dccf146bb396480"><td class="memItemLeft" align="right" valign="top"><a id="ada49c49f94c43aee7dccf146bb396480"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Report</b> (<a class="el" href="struct_date_time.html">DateTime</a> dateGenerated, string reportData)</td></tr>
 <tr class="separator:ada49c49f94c43aee7dccf146bb396480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6547fc619c3a63bf5e337e1c7f828b73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_date_time.html">DateTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_report.html#a6547fc619c3a63bf5e337e1c7f828b73">getDateGenerated</a> ()</td></tr>
 <tr class="memdesc:a6547fc619c3a63bf5e337e1c7f828b73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the date the report was generated.  <a href="class_report.html#a6547fc619c3a63bf5e337e1c7f828b73">More...</a><br /></td></tr>
@@ -101,45 +97,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Scott Caldwell</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>1.0</dd></dl>
 <p>Created on Sun Mar 29 2020 </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ada49c49f94c43aee7dccf146bb396480"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada49c49f94c43aee7dccf146bb396480">&#9670;&nbsp;</a></span>Report()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Report::Report </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_date_time.html">DateTime</a>&#160;</td>
-          <td class="paramname"><em>dateGenerated</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>reportData</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Construct an report object. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dateGenerated</td><td>The date the report was generated </td></tr>
-    <tr><td class="paramname">reportData</td><td>The data of the report </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6547fc619c3a63bf5e337e1c7f828b73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6547fc619c3a63bf5e337e1c7f828b73">&#9670;&nbsp;</a></span>getDateGenerated()</h2>
 
@@ -156,7 +114,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the date the report was generated. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_date_time.html">DateTime</a> the date the report was generated </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="struct_date_time.html">DateTime</a> the date the report was generated</dd></dl>
+<p>get the <a class="el" href="struct_date.html" title="Defines the Date objects for appointment slots and other classes, since C++ contains no built-in clas...">Date</a> Generated object </p>
 
 </div>
 </div>
@@ -176,7 +135,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve the data of the report. </p>
-<dl class="section return"><dt>Returns</dt><dd>String the data of the report </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>String the data of the report</dd></dl>
+<p>get the <a class="el" href="class_report.html" title="This class generates a report of the earnings of the doctors and therapists.">Report</a> Data object </p>
 
 </div>
 </div>
@@ -199,11 +159,12 @@ Public Member Functions</h2></td></tr>
 <p>set the date of the report </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">date</td><td>the date of the report being generated </td></tr>
+    <tr><td class="paramname"><a class="el" href="struct_date_time.html">DateTime</a></td><td>the date of the report being generated </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
+<p>set the <a class="el" href="struct_date.html" title="Defines the Date objects for appointment slots and other classes, since C++ contains no built-in clas...">Date</a> Generated object </p>
 
 </div>
 </div>
@@ -226,16 +187,18 @@ Public Member Functions</h2></td></tr>
 <p>set the data of the report </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>the data the report consists of </td></tr>
+    <tr><td class="paramname">String</td><td>the data the report consists of </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>None </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
+<p>set the <a class="el" href="class_report.html" title="This class generates a report of the earnings of the doctors and therapists.">Report</a> Data object </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_report_8h_source.html">Report.h</a></li>
+<li>Report.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

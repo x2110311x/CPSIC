@@ -2,21 +2,16 @@
 \label{class_invoice}\index{Invoice@{Invoice}}
 
 
-this class generates the invoices that are sent out to the patients. it also tracks whether the invoice is paid or not and what time it was created.  
-
-
-
-
 {\ttfamily \#include $<$Invoice.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_invoice_a25d6ad261479340ac3775e21f03eef90}\label{class_invoice_a25d6ad261479340ac3775e21f03eef90}} 
 \mbox{\hyperlink{class_invoice_a25d6ad261479340ac3775e21f03eef90}{Invoice}} ()
-\begin{DoxyCompactList}\small\item\em Construct an invoice object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_invoice_a183dc926da1f27e56edec1d05ef84db6}{Invoice}} (\mbox{\hyperlink{class_visit}{Visit}} visit, int cost, \mbox{\hyperlink{struct_date_time}{Date\+Time}} date\+Created, bool paid)
-\begin{DoxyCompactList}\small\item\em Construct an invoice object. \end{DoxyCompactList}\item 
+\item 
+\mbox{\Hypertarget{class_invoice_a183dc926da1f27e56edec1d05ef84db6}\label{class_invoice_a183dc926da1f27e56edec1d05ef84db6}} 
+{\bfseries Invoice} (\mbox{\hyperlink{class_visit}{Visit}} visit, int cost, \mbox{\hyperlink{struct_date_time}{Date\+Time}} date\+Created, bool paid)
+\item 
 \mbox{\hyperlink{class_visit}{Visit}} \mbox{\hyperlink{class_invoice_a31bb2d0f7450520197f720fcd689cb65}{get\+Visit}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the visit that corresponds with the invoice. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_invoice_a65e3c8bd489b484d225cf9ae95c0bb4f}{get\+Cost}} ()
@@ -25,18 +20,18 @@ int \mbox{\hyperlink{class_invoice_a65e3c8bd489b484d225cf9ae95c0bb4f}{get\+Cost}
 \begin{DoxyCompactList}\small\item\em Retrieve the time the invoice was created. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{class_invoice_afb188d5afeb00d8d4398cc1ba0db6836}{is\+Paid}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve if the invoice is paid. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_invoice_a48b781ab54e7202cf454fa9deb62d8ca}{set\+Visit}} (\mbox{\hyperlink{class_visit}{Visit}} visit)
+void \mbox{\hyperlink{class_invoice_af7a97fe442a21e3ca672243ccbad36ce}{set\+Visit}} (\mbox{\hyperlink{class_visit}{Visit}} v)
 \begin{DoxyCompactList}\small\item\em Set the visit of the invoice. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_invoice_a0bbc645b284232299d744a2e9c55e18b}{set\+Cost}} (int cost)
+void \mbox{\hyperlink{class_invoice_a12b838c000cfa888edd85d6b9aff1912}{set\+Cost}} (int c)
 \begin{DoxyCompactList}\small\item\em Set the cost of the invoice. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_invoice_a376b199b223f9f81d6d0577d4296a3b7}{set\+Date\+Created}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} date\+Created)
+void \mbox{\hyperlink{class_invoice_adc0c841c02d1d3d3ee8d500de41b70c3}{set\+Date\+Created}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} d)
 \begin{DoxyCompactList}\small\item\em Set the date the invoice was created. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_invoice_a8b21d2c1297d097cc1b040dbf82d1e34}{pay}} (\mbox{\hyperlink{class_payment}{Payment}} \&payment)
+void \mbox{\hyperlink{class_invoice_a519d6d79fdd837cfb29533be7d430270}{pay}} (int pay)
 \begin{DoxyCompactList}\small\item\em pay the invoice \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-this class generates the invoices that are sent out to the patients. it also tracks whether the invoice is paid or not and what time it was created. 
+this class generates the invoices that are sent out to the patients. it also tracks whether the invoice is paid or not and what time it was created.
 
 \begin{DoxyAuthor}{Author}
 Scott Caldwell
@@ -47,28 +42,15 @@ Scott Caldwell
 Created on Sun Mar 29 2020 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_invoice_a183dc926da1f27e56edec1d05ef84db6}\label{class_invoice_a183dc926da1f27e56edec1d05ef84db6}} 
+\mbox{\Hypertarget{class_invoice_a25d6ad261479340ac3775e21f03eef90}\label{class_invoice_a25d6ad261479340ac3775e21f03eef90}} 
 \index{Invoice@{Invoice}!Invoice@{Invoice}}
 \index{Invoice@{Invoice}!Invoice@{Invoice}}
 \doxysubsubsection{\texorpdfstring{Invoice()}{Invoice()}}
-{\footnotesize\ttfamily Invoice\+::\+Invoice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visit}{Visit}}}]{visit,  }\item[{int}]{cost,  }\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{date\+Created,  }\item[{bool}]{paid }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Invoice\+::\+Invoice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+Invoice.\+cpp
 
-
-Construct an invoice object. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em visit} & The viist the invoice is associated with \\
-\hline
-{\em cost} & The balance on the invoice \\
-\hline
-{\em date\+Created} & The date and time the invoice was created \\
-\hline
-{\em paid} & Whether or not it has been paid yet \\
-\hline
-\end{DoxyParams}
-
+Declaration of \mbox{\hyperlink{class_invoice}{Invoice}} 
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_invoice_a65e3c8bd489b484d225cf9ae95c0bb4f}\label{class_invoice_a65e3c8bd489b484d225cf9ae95c0bb4f}} 
@@ -82,9 +64,9 @@ Construct an invoice object.
 Retrieve the cost of the invoice. 
 
 \begin{DoxyReturn}{Returns}
-Int the cost of the invoice 
+Int the cost of the invoice
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_invoice_a83d24daab442edef3e469df1678eb972}\label{class_invoice_a83d24daab442edef3e469df1678eb972}} 
+Get the Cost object \mbox{\Hypertarget{class_invoice_a83d24daab442edef3e469df1678eb972}\label{class_invoice_a83d24daab442edef3e469df1678eb972}} 
 \index{Invoice@{Invoice}!getDateCreated@{getDateCreated}}
 \index{getDateCreated@{getDateCreated}!Invoice@{Invoice}}
 \doxysubsubsection{\texorpdfstring{getDateCreated()}{getDateCreated()}}
@@ -95,9 +77,9 @@ Int the cost of the invoice
 Retrieve the time the invoice was created. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} the time the invoice was created 
+\mbox{\hyperlink{struct_date_time}{Date\+Time}} the time the invoice was created
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_invoice_a31bb2d0f7450520197f720fcd689cb65}\label{class_invoice_a31bb2d0f7450520197f720fcd689cb65}} 
+Get the \mbox{\hyperlink{struct_date}{Date}} Created object \mbox{\Hypertarget{class_invoice_a31bb2d0f7450520197f720fcd689cb65}\label{class_invoice_a31bb2d0f7450520197f720fcd689cb65}} 
 \index{Invoice@{Invoice}!getVisit@{getVisit}}
 \index{getVisit@{getVisit}!Invoice@{Invoice}}
 \doxysubsubsection{\texorpdfstring{getVisit()}{getVisit()}}
@@ -108,9 +90,9 @@ Retrieve the time the invoice was created.
 Retrieve the visit that corresponds with the invoice. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{class_visit}{Visit}} that corresponds with the invoice 
+\mbox{\hyperlink{class_visit}{Visit}} that corresponds with the invoice
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_invoice_afb188d5afeb00d8d4398cc1ba0db6836}\label{class_invoice_afb188d5afeb00d8d4398cc1ba0db6836}} 
+Get the \mbox{\hyperlink{class_visit}{Visit}} object \mbox{\Hypertarget{class_invoice_afb188d5afeb00d8d4398cc1ba0db6836}\label{class_invoice_afb188d5afeb00d8d4398cc1ba0db6836}} 
 \index{Invoice@{Invoice}!isPaid@{isPaid}}
 \index{isPaid@{isPaid}!Invoice@{Invoice}}
 \doxysubsubsection{\texorpdfstring{isPaid()}{isPaid()}}
@@ -121,13 +103,13 @@ Retrieve the visit that corresponds with the invoice.
 Retrieve if the invoice is paid. 
 
 \begin{DoxyReturn}{Returns}
-Bool if the invoice is paid 
+Bool if the invoice is paid
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_invoice_a8b21d2c1297d097cc1b040dbf82d1e34}\label{class_invoice_a8b21d2c1297d097cc1b040dbf82d1e34}} 
+Get the is Paid object \mbox{\Hypertarget{class_invoice_a519d6d79fdd837cfb29533be7d430270}\label{class_invoice_a519d6d79fdd837cfb29533be7d430270}} 
 \index{Invoice@{Invoice}!pay@{pay}}
 \index{pay@{pay}!Invoice@{Invoice}}
 \doxysubsubsection{\texorpdfstring{pay()}{pay()}}
-{\footnotesize\ttfamily void Invoice\+::pay (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_payment}{Payment}} \&}]{payment }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Invoice\+::pay (\begin{DoxyParamCaption}\item[{int}]{pay }\end{DoxyParamCaption})}
 
 
 
@@ -135,17 +117,17 @@ pay the invoice
 
 
 \begin{DoxyParams}{Parameters}
-{\em payment} & the amount paid toward the invoice \\
+{\em Int} & the amount paid toward the invoice \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-None 
+None
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_invoice_a0bbc645b284232299d744a2e9c55e18b}\label{class_invoice_a0bbc645b284232299d744a2e9c55e18b}} 
+Set the Pay object \mbox{\Hypertarget{class_invoice_a12b838c000cfa888edd85d6b9aff1912}\label{class_invoice_a12b838c000cfa888edd85d6b9aff1912}} 
 \index{Invoice@{Invoice}!setCost@{setCost}}
 \index{setCost@{setCost}!Invoice@{Invoice}}
 \doxysubsubsection{\texorpdfstring{setCost()}{setCost()}}
-{\footnotesize\ttfamily void Invoice\+::set\+Cost (\begin{DoxyParamCaption}\item[{int}]{cost }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Invoice\+::set\+Cost (\begin{DoxyParamCaption}\item[{int}]{c }\end{DoxyParamCaption})}
 
 
 
@@ -153,17 +135,17 @@ Set the cost of the invoice.
 
 
 \begin{DoxyParams}{Parameters}
-{\em cost} & the cost of the invoice \\
+{\em Int} & the cost of the invoice \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-None 
+None
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_invoice_a376b199b223f9f81d6d0577d4296a3b7}\label{class_invoice_a376b199b223f9f81d6d0577d4296a3b7}} 
+Set the Cost object \mbox{\Hypertarget{class_invoice_adc0c841c02d1d3d3ee8d500de41b70c3}\label{class_invoice_adc0c841c02d1d3d3ee8d500de41b70c3}} 
 \index{Invoice@{Invoice}!setDateCreated@{setDateCreated}}
 \index{setDateCreated@{setDateCreated}!Invoice@{Invoice}}
 \doxysubsubsection{\texorpdfstring{setDateCreated()}{setDateCreated()}}
-{\footnotesize\ttfamily void Invoice\+::set\+Date\+Created (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{date\+Created }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Invoice\+::set\+Date\+Created (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{d }\end{DoxyParamCaption})}
 
 
 
@@ -171,17 +153,17 @@ Set the date the invoice was created.
 
 
 \begin{DoxyParams}{Parameters}
-{\em date\+Created} & the date the invoice was created \\
+{\em \mbox{\hyperlink{struct_date_time}{Date\+Time}}} & the date the invoice was created \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-None 
+None
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_invoice_a48b781ab54e7202cf454fa9deb62d8ca}\label{class_invoice_a48b781ab54e7202cf454fa9deb62d8ca}} 
+Set the \mbox{\hyperlink{struct_date}{Date}} Created object \mbox{\Hypertarget{class_invoice_af7a97fe442a21e3ca672243ccbad36ce}\label{class_invoice_af7a97fe442a21e3ca672243ccbad36ce}} 
 \index{Invoice@{Invoice}!setVisit@{setVisit}}
 \index{setVisit@{setVisit}!Invoice@{Invoice}}
 \doxysubsubsection{\texorpdfstring{setVisit()}{setVisit()}}
-{\footnotesize\ttfamily void Invoice\+::set\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visit}{Visit}}}]{visit }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Invoice\+::set\+Visit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_visit}{Visit}}}]{v }\end{DoxyParamCaption})}
 
 
 
@@ -189,14 +171,15 @@ Set the visit of the invoice.
 
 
 \begin{DoxyParams}{Parameters}
-{\em visit} & the visit that corresponds with the invoice \\
+{\em \mbox{\hyperlink{class_visit}{Visit}}} & the visit that corresponds with the invoice \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-None 
+None
 \end{DoxyReturn}
+Set the \mbox{\hyperlink{class_visit}{Visit}} object 
 
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Invoice.\+h\end{DoxyCompactItemize}
+Invoice.\+h\item 
+Invoice.\+cpp\end{DoxyCompactItemize}

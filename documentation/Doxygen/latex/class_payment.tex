@@ -2,21 +2,14 @@
 \label{class_payment}\index{Payment@{Payment}}
 
 
-This class keeps track of the payments made.  
-
-
-
-
 {\ttfamily \#include $<$Payment.\+h$>$}
 
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{class_payment_a0cc3df1030b4aae4007252798bbb782b}\label{class_payment_a0cc3df1030b4aae4007252798bbb782b}} 
-\mbox{\hyperlink{class_payment_a0cc3df1030b4aae4007252798bbb782b}{Payment}} ()
-\begin{DoxyCompactList}\small\item\em Construct an payment object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_payment_a11bdc8b24e08b1413b55dab62c694072}{Payment}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} date\+Received, string type, int amount, \mbox{\hyperlink{class_invoice}{Invoice}} invoice)
-\begin{DoxyCompactList}\small\item\em Construct an payment object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_payment_a11bdc8b24e08b1413b55dab62c694072}\label{class_payment_a11bdc8b24e08b1413b55dab62c694072}} 
+{\bfseries Payment} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} date\+Received, string type, int amount, \mbox{\hyperlink{class_invoice}{Invoice}} invoice)
+\item 
 string \mbox{\hyperlink{class_payment_affbe4231ff24e897c633d4d49412254b}{get\+Type}} ()
 \begin{DoxyCompactList}\small\item\em Retrieve the type of payment. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_payment_ad63d97e41ab918f1eb36a11f51dde731}{get\+Amount}} ()
@@ -28,7 +21,7 @@ int \mbox{\hyperlink{class_payment_ad63d97e41ab918f1eb36a11f51dde731}{get\+Amoun
 
 
 \doxysubsection{Detailed Description}
-This class keeps track of the payments made. 
+This class keeps track of the payments made
 
 \begin{DoxyAuthor}{Author}
 Scott Caldwell
@@ -37,30 +30,6 @@ Scott Caldwell
 1.\+0
 \end{DoxyVersion}
 Created on Sun Mar 29 2020 
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{class_payment_a11bdc8b24e08b1413b55dab62c694072}\label{class_payment_a11bdc8b24e08b1413b55dab62c694072}} 
-\index{Payment@{Payment}!Payment@{Payment}}
-\index{Payment@{Payment}!Payment@{Payment}}
-\doxysubsubsection{\texorpdfstring{Payment()}{Payment()}}
-{\footnotesize\ttfamily Payment\+::\+Payment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{date\+Received,  }\item[{string}]{type,  }\item[{int}]{amount,  }\item[{\mbox{\hyperlink{class_invoice}{Invoice}}}]{invoice }\end{DoxyParamCaption})}
-
-
-
-Construct an payment object. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em date\+Received} & The date the payment was received \\
-\hline
-{\em type} & The type of payment -\/ Credit Card, cash, ceheck \\
-\hline
-{\em amount} & The amount of the payment \\
-\hline
-{\em invoice} & The invoice the payment is associated with \\
-\hline
-\end{DoxyParams}
-
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_payment_ad63d97e41ab918f1eb36a11f51dde731}\label{class_payment_ad63d97e41ab918f1eb36a11f51dde731}} 
@@ -74,9 +43,9 @@ Construct an payment object.
 Retrieve the amount of the payment. 
 
 \begin{DoxyReturn}{Returns}
-Int the amount of the payment 
+Int the amount of the payment
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_payment_a69bf58b78ef3c61a52c89890169b9316}\label{class_payment_a69bf58b78ef3c61a52c89890169b9316}} 
+Get the Amount object \mbox{\Hypertarget{class_payment_a69bf58b78ef3c61a52c89890169b9316}\label{class_payment_a69bf58b78ef3c61a52c89890169b9316}} 
 \index{Payment@{Payment}!getDateReceived@{getDateReceived}}
 \index{getDateReceived@{getDateReceived}!Payment@{Payment}}
 \doxysubsubsection{\texorpdfstring{getDateReceived()}{getDateReceived()}}
@@ -87,9 +56,9 @@ Int the amount of the payment
 Retrieve the date the payment was received. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} the date the payment was received 
+\mbox{\hyperlink{struct_date_time}{Date\+Time}} the date the payment was received
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_payment_afa1ce975613cd328981afa0e2d08089b}\label{class_payment_afa1ce975613cd328981afa0e2d08089b}} 
+Get the \mbox{\hyperlink{struct_date}{Date}} Received object \mbox{\Hypertarget{class_payment_afa1ce975613cd328981afa0e2d08089b}\label{class_payment_afa1ce975613cd328981afa0e2d08089b}} 
 \index{Payment@{Payment}!getInvoice@{getInvoice}}
 \index{getInvoice@{getInvoice}!Payment@{Payment}}
 \doxysubsubsection{\texorpdfstring{getInvoice()}{getInvoice()}}
@@ -100,9 +69,9 @@ Retrieve the date the payment was received.
 Retrieve the invoice that corresponds with the payment. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{class_invoice}{Invoice}} that corresponds with the payment 
+\mbox{\hyperlink{class_invoice}{Invoice}} that corresponds with the payment
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_payment_affbe4231ff24e897c633d4d49412254b}\label{class_payment_affbe4231ff24e897c633d4d49412254b}} 
+Get the \mbox{\hyperlink{class_invoice}{Invoice}} object \mbox{\Hypertarget{class_payment_affbe4231ff24e897c633d4d49412254b}\label{class_payment_affbe4231ff24e897c633d4d49412254b}} 
 \index{Payment@{Payment}!getType@{getType}}
 \index{getType@{getType}!Payment@{Payment}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}
@@ -113,10 +82,11 @@ Retrieve the invoice that corresponds with the payment.
 Retrieve the type of payment. 
 
 \begin{DoxyReturn}{Returns}
-String the type of payment made 
+String the type of payment made
 \end{DoxyReturn}
+Get the Type object 
 
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Payment.\+h\end{DoxyCompactItemize}
+Payment.\+h\item 
+Payment.\+cpp\end{DoxyCompactItemize}

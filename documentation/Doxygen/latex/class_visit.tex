@@ -9,7 +9,7 @@
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_visit}{Visit}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_visit_ad50ae52c3558ddb2b20cddabbd826758}{$\sim$\+Visit}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_visit}{Visit}} object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} \mbox{\hyperlink{class_visit_a34e85e585d5c6ab8047c90eb6e35fea9}{get\+Date\+Time}} ()
+\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} \mbox{\hyperlink{class_visit_abbb55f58634b810c3a68c10bc0ff1a81}{get\+Date\+Time}} ()
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{struct_date}{Date}} Time object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_patient}{Patient}} \mbox{\hyperlink{class_visit_a39a4aaf54bdbfd386c08d30f25ae1cfa}{get\+Patient}} ()
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_patient}{Patient}} object. \end{DoxyCompactList}\item 
@@ -19,7 +19,7 @@ string \mbox{\hyperlink{class_visit_abc287dcc64e3da1f4c30e5f992d43867}{get\+Type
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_personnel}{Personnel}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_test}{Test}} \mbox{\hyperlink{class_visit_a1184f09c538581da377db8ada9ac0d09}{get\+Test}} ()
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_test}{Test}} object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_test_result}{Test\+Result}} $\ast$ \mbox{\hyperlink{class_visit_a919706d074a698bac4dd110f57e809b9}{get\+Test\+Results}} ()
+\mbox{\hyperlink{class_test_result}{Test\+Result}} $\ast$ \mbox{\hyperlink{class_visit_a1005123118e248052c1fe484784414ac}{get\+Test\+Results}} ()
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_test}{Test}} Results object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_visit_ac2fdd53181222be43c7decfc8eb996fe}{set\+Patient}} (\mbox{\hyperlink{class_patient}{Patient}} patient)
 \begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_patient}{Patient}} object. \end{DoxyCompactList}\item 
@@ -27,7 +27,7 @@ void \mbox{\hyperlink{class_visit_aa1797496a20d5903b4a2b1de16fd524e}{set\+Type}}
 \begin{DoxyCompactList}\small\item\em Set the Type object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_visit_a196b04df7817a7cde17e6e4dbd62125d}{set\+Personnel}} (\mbox{\hyperlink{class_personnel}{Personnel}} personnel)
 \begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_personnel}{Personnel}} object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_visit_a5096bcd48b3a19755537167133e86ce1}{set\+Date\+Time}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} date\+Time)
+void \mbox{\hyperlink{class_visit_ac4e366333174ba5efa5e24629c7305e9}{set\+Date\+Time}} (\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} date\+Time)
 \begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{struct_date}{Date}} Time object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_visit_a327c69bf82cf64f18a3489ebe0741a69}{add\+Test}} (\mbox{\hyperlink{class_test}{Test}} test)
 \begin{DoxyCompactList}\small\item\em Add a test to the appointment. \end{DoxyCompactList}\item 
@@ -50,15 +50,17 @@ void \mbox{\hyperlink{class_visit_a61734c2c951b6232aa21716822ceab3d}{remove\+Tes
 
 Construct a new \mbox{\hyperlink{class_visit}{Visit}} object. 
 
-\mbox{\Hypertarget{class_visit_a3af94603b0079a9c375b3a05b09ee577}\label{class_visit_a3af94603b0079a9c375b3a05b09ee577}} 
+Construct a new \mbox{\hyperlink{class_visit}{Visit}}\+:\+: \mbox{\hyperlink{class_visit}{Visit}} object default constructor.\mbox{\Hypertarget{class_visit_a3af94603b0079a9c375b3a05b09ee577}\label{class_visit_a3af94603b0079a9c375b3a05b09ee577}} 
 \index{Visit@{Visit}!Visit@{Visit}}
 \index{Visit@{Visit}!Visit@{Visit}}
 \doxysubsubsection{\texorpdfstring{Visit()}{Visit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Visit\+::\+Visit (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{patient,  }\item[{\mbox{\hyperlink{class_personnel}{Personnel}}}]{personnel,  }\item[{\mbox{\hyperlink{class_test_result}{Test\+Result}}}]{test\+Result,  }\item[{\mbox{\hyperlink{class_test}{Test}}}]{test,  }\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{date\+Time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Visit\+::\+Visit (\begin{DoxyParamCaption}\item[{string}]{new\+Type,  }\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{new\+Patient,  }\item[{\mbox{\hyperlink{class_personnel}{Personnel}}}]{new\+Personnel,  }\item[{\mbox{\hyperlink{class_test_result}{Test\+Result}}}]{new\+Test\+Result,  }\item[{\mbox{\hyperlink{class_test}{Test}}}]{new\+Test,  }\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{new\+Date\+Time }\end{DoxyParamCaption})}
 
 
 
 Construct a new \mbox{\hyperlink{class_visit}{Visit}} object. 
+
+Construct a new \mbox{\hyperlink{class_visit}{Visit}}\+:\+: \mbox{\hyperlink{class_visit}{Visit}} object.
 
 
 \begin{DoxyParams}{Parameters}
@@ -73,6 +75,18 @@ Construct a new \mbox{\hyperlink{class_visit}{Visit}} object.
 {\em test} & \\
 \hline
 {\em date\+Time} & \\
+\hline
+{\em new\+Type} & \\
+\hline
+{\em new\+Patient} & \\
+\hline
+{\em new\+Personnel} & \\
+\hline
+{\em new\+Test\+Result} & \\
+\hline
+{\em new\+Test} & \\
+\hline
+{\em new\+Date\+Time} & \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_visit_ad50ae52c3558ddb2b20cddabbd826758}\label{class_visit_ad50ae52c3558ddb2b20cddabbd826758}} 
@@ -118,11 +132,11 @@ Record a test result for the appointment.
 {\em test\+Result} & The testresult to add \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_visit_a34e85e585d5c6ab8047c90eb6e35fea9}\label{class_visit_a34e85e585d5c6ab8047c90eb6e35fea9}} 
+\mbox{\Hypertarget{class_visit_abbb55f58634b810c3a68c10bc0ff1a81}\label{class_visit_abbb55f58634b810c3a68c10bc0ff1a81}} 
 \index{Visit@{Visit}!getDateTime@{getDateTime}}
 \index{getDateTime@{getDateTime}!Visit@{Visit}}
 \doxysubsubsection{\texorpdfstring{getDateTime()}{getDateTime()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_date_time}{Date\+Time}} Visit\+::get\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} Visit\+::get\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -170,11 +184,11 @@ Get the \mbox{\hyperlink{class_test}{Test}} object.
 \begin{DoxyReturn}{Returns}
 \mbox{\hyperlink{class_test}{Test}} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_visit_a919706d074a698bac4dd110f57e809b9}\label{class_visit_a919706d074a698bac4dd110f57e809b9}} 
+\mbox{\Hypertarget{class_visit_a1005123118e248052c1fe484784414ac}\label{class_visit_a1005123118e248052c1fe484784414ac}} 
 \index{Visit@{Visit}!getTestResults@{getTestResults}}
 \index{getTestResults@{getTestResults}!Visit@{Visit}}
 \doxysubsubsection{\texorpdfstring{getTestResults()}{getTestResults()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_test_result}{Test\+Result}}$\ast$ Visit\+::get\+Test\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_test_result}{Test\+Result}} $\ast$ Visit\+::get\+Test\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -226,11 +240,11 @@ Remove a testresult from the appointment.
 {\em test\+Result} & The test to remove \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_visit_a5096bcd48b3a19755537167133e86ce1}\label{class_visit_a5096bcd48b3a19755537167133e86ce1}} 
+\mbox{\Hypertarget{class_visit_ac4e366333174ba5efa5e24629c7305e9}\label{class_visit_ac4e366333174ba5efa5e24629c7305e9}} 
 \index{Visit@{Visit}!setDateTime@{setDateTime}}
 \index{setDateTime@{setDateTime}!Visit@{Visit}}
 \doxysubsubsection{\texorpdfstring{setDateTime()}{setDateTime()}}
-{\footnotesize\ttfamily void Visit\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{date\+Time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Visit\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{date\+Time }\end{DoxyParamCaption})}
 
 
 
@@ -288,6 +302,7 @@ Set the Type object.
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{visit_8h}{visit.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{visit_8h}{visit.\+h}}\item 
+Visit.\+cpp\end{DoxyCompactItemize}

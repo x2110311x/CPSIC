@@ -1,17 +1,11 @@
 \hypertarget{class_test_result}{}\doxysection{Test\+Result Class Reference}
 \label{class_test_result}\index{TestResult@{TestResult}}
-Inheritance diagram for Test\+Result\+:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{class_test_result}
-\end{center}
-\end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_test_result_af77fa5c098e06de9a1dd456169a6b329}{Test\+Result}} ()
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_test}{Test}} Result object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_test_result_a88d04620f77402fc1249c3f1f7c726ce}{Test\+Result}} (\mbox{\hyperlink{class_test}{Test}} test, \mbox{\hyperlink{struct_date_time}{Date\+Time}} time\+Performed, \mbox{\hyperlink{struct_date_time}{Date\+Time}} time\+Receveived, \mbox{\hyperlink{class_patient}{Patient}} patient, string result, string type)
+\mbox{\hyperlink{class_test_result_a4e4788b1656fc7ce03f6f56ca3d3182f}{Test\+Result}} (\mbox{\hyperlink{class_test}{Test}} test, \mbox{\hyperlink{struct_date_time}{Date\+Time}} time\+Received, string result)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_test}{Test}} Result object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_test_result_a784e507454a889a244e98ad7b05f0dcb}{$\sim$\+Test\+Result}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_test}{Test}} Result object. \end{DoxyCompactList}\item 
@@ -40,15 +34,17 @@ void \mbox{\hyperlink{class_test_result_a6ddade30fb18b70d192f7af334b949c9}{set\+
 
 Construct a new \mbox{\hyperlink{class_test}{Test}} Result object. 
 
-\mbox{\Hypertarget{class_test_result_a88d04620f77402fc1249c3f1f7c726ce}\label{class_test_result_a88d04620f77402fc1249c3f1f7c726ce}} 
+Construct a new \mbox{\hyperlink{class_test}{Test}} Result\+:\+: \mbox{\hyperlink{class_test}{Test}} Result object default constructor.\mbox{\Hypertarget{class_test_result_a4e4788b1656fc7ce03f6f56ca3d3182f}\label{class_test_result_a4e4788b1656fc7ce03f6f56ca3d3182f}} 
 \index{TestResult@{TestResult}!TestResult@{TestResult}}
 \index{TestResult@{TestResult}!TestResult@{TestResult}}
 \doxysubsubsection{\texorpdfstring{TestResult()}{TestResult()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Test\+Result\+::\+Test\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_test}{Test}}}]{test,  }\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{time\+Performed,  }\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{time\+Receveived,  }\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{patient,  }\item[{string}]{result,  }\item[{string}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Test\+Result\+::\+Test\+Result (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_test}{Test}}}]{new\+Test,  }\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{new\+Time\+Received,  }\item[{string}]{new\+Result }\end{DoxyParamCaption})}
 
 
 
 Construct a new \mbox{\hyperlink{class_test}{Test}} Result object. 
+
+Construct a new \mbox{\hyperlink{class_test}{Test}} Result\+:\+: \mbox{\hyperlink{class_test}{Test}} Result object.
 
 
 \begin{DoxyParams}{Parameters}
@@ -64,6 +60,10 @@ Construct a new \mbox{\hyperlink{class_test}{Test}} Result object.
 \hline
 {\em type} & \\
 \hline
+{\em new\+Time\+Received} & \\
+\hline
+{\em new\+Result} & \\
+\hline
 \end{DoxyParams}
 \mbox{\Hypertarget{class_test_result_a784e507454a889a244e98ad7b05f0dcb}\label{class_test_result_a784e507454a889a244e98ad7b05f0dcb}} 
 \index{TestResult@{TestResult}!````~TestResult@{$\sim$TestResult}}
@@ -75,7 +75,7 @@ Construct a new \mbox{\hyperlink{class_test}{Test}} Result object.
 
 Destroy the \mbox{\hyperlink{class_test}{Test}} Result object. 
 
-
+Destroy the \mbox{\hyperlink{class_test}{Test}} Result\+:\+: \mbox{\hyperlink{class_test}{Test}} Result object.
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{class_test_result_a978dddcdcbaf0f54826bde58e5a7ecd1}\label{class_test_result_a978dddcdcbaf0f54826bde58e5a7ecd1}} 
@@ -89,9 +89,9 @@ Destroy the \mbox{\hyperlink{class_test}{Test}} Result object.
 Get the Result object. 
 
 \begin{DoxyReturn}{Returns}
-string 
+string
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_test_result_a21696842c2b85702b10f7100eae0b63a}\label{class_test_result_a21696842c2b85702b10f7100eae0b63a}} 
+Get the Result object \mbox{\Hypertarget{class_test_result_a21696842c2b85702b10f7100eae0b63a}\label{class_test_result_a21696842c2b85702b10f7100eae0b63a}} 
 \index{TestResult@{TestResult}!getTest@{getTest}}
 \index{getTest@{getTest}!TestResult@{TestResult}}
 \doxysubsubsection{\texorpdfstring{getTest()}{getTest()}}
@@ -102,9 +102,9 @@ string
 Get the \mbox{\hyperlink{class_test}{Test}} object. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{class_test}{Test}} 
+\mbox{\hyperlink{class_test}{Test}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_test_result_ad2eece30ff558b487cd89267a6d95a12}\label{class_test_result_ad2eece30ff558b487cd89267a6d95a12}} 
+Get the \mbox{\hyperlink{class_test}{Test}} object \mbox{\Hypertarget{class_test_result_ad2eece30ff558b487cd89267a6d95a12}\label{class_test_result_ad2eece30ff558b487cd89267a6d95a12}} 
 \index{TestResult@{TestResult}!getTimeReceived@{getTimeReceived}}
 \index{getTimeReceived@{getTimeReceived}!TestResult@{TestResult}}
 \doxysubsubsection{\texorpdfstring{getTimeReceived()}{getTimeReceived()}}
@@ -115,13 +115,13 @@ Get the \mbox{\hyperlink{class_test}{Test}} object.
 Get the Time Received object. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} 
+\mbox{\hyperlink{struct_date_time}{Date\+Time}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_test_result_a6ddade30fb18b70d192f7af334b949c9}\label{class_test_result_a6ddade30fb18b70d192f7af334b949c9}} 
+Get the Time Received object \mbox{\Hypertarget{class_test_result_a6ddade30fb18b70d192f7af334b949c9}\label{class_test_result_a6ddade30fb18b70d192f7af334b949c9}} 
 \index{TestResult@{TestResult}!setResult@{setResult}}
 \index{setResult@{setResult}!TestResult@{TestResult}}
 \doxysubsubsection{\texorpdfstring{setResult()}{setResult()}}
-{\footnotesize\ttfamily void Test\+Result\+::set\+Result (\begin{DoxyParamCaption}\item[{string}]{result }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Result (\begin{DoxyParamCaption}\item[{string}]{new\+Result }\end{DoxyParamCaption})}
 
 
 
@@ -132,11 +132,11 @@ Set the Result object.
 {\em result} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_test_result_a5ad8957a459cf5067200cf609ab8a3e9}\label{class_test_result_a5ad8957a459cf5067200cf609ab8a3e9}} 
+Set the Result object \mbox{\Hypertarget{class_test_result_a5ad8957a459cf5067200cf609ab8a3e9}\label{class_test_result_a5ad8957a459cf5067200cf609ab8a3e9}} 
 \index{TestResult@{TestResult}!setTest@{setTest}}
 \index{setTest@{setTest}!TestResult@{TestResult}}
 \doxysubsubsection{\texorpdfstring{setTest()}{setTest()}}
-{\footnotesize\ttfamily void Test\+Result\+::set\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_test}{Test}}}]{test }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_test}{Test}}}]{new\+Test }\end{DoxyParamCaption})}
 
 
 
@@ -147,11 +147,11 @@ Set the \mbox{\hyperlink{class_test}{Test}} object.
 {\em test} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_test_result_ad6f3159b9fb1369baed5e382f9d16e92}\label{class_test_result_ad6f3159b9fb1369baed5e382f9d16e92}} 
+Set the \mbox{\hyperlink{class_test}{Test}} object \mbox{\Hypertarget{class_test_result_ad6f3159b9fb1369baed5e382f9d16e92}\label{class_test_result_ad6f3159b9fb1369baed5e382f9d16e92}} 
 \index{TestResult@{TestResult}!setTimeReceived@{setTimeReceived}}
 \index{setTimeReceived@{setTimeReceived}!TestResult@{TestResult}}
 \doxysubsubsection{\texorpdfstring{setTimeReceived()}{setTimeReceived()}}
-{\footnotesize\ttfamily void Test\+Result\+::set\+Time\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Test\+Result\+::set\+Time\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{new\+Time }\end{DoxyParamCaption})}
 
 
 
@@ -162,8 +162,9 @@ Set the Time Received object.
 {\em time} & \\
 \hline
 \end{DoxyParams}
+Set the Time Received object 
 
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_test_result_8h}{Test\+Result.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_test_result_8h}{Test\+Result.\+h}}\item 
+Test\+Result.\+cpp\end{DoxyCompactItemize}

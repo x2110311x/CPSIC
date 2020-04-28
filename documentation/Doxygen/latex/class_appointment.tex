@@ -7,9 +7,7 @@
 \begin{DoxyCompactList}\small\item\em Construct a new appointment object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_appointment_a92af6a78192dae4a630d3a2d462492a9}{Appointment}} (string type, \mbox{\hyperlink{class_patient}{Patient}} patient, \mbox{\hyperlink{class_personnel}{Personnel}} personnel, \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} date\+Time)
 \begin{DoxyCompactList}\small\item\em Construct a new appointment object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_appointment_a3fb7487548e10abc6e581a550f1d800d}{$\sim$\+Appointment}} ()
-\begin{DoxyCompactList}\small\item\em Destroy the appointment object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} \mbox{\hyperlink{class_appointment_a3fede7e399b1e336c2cdfd043c5d04a2}{get\+Date\+Time}} ()
+\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} \mbox{\hyperlink{class_appointment_a5cb79cdad094079253c5d13ac383c198}{get\+Date\+Time}} ()
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{struct_date}{Date}} Time object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_patient}{Patient}} \mbox{\hyperlink{class_appointment_a92a73b5fe0159d318d4e841d5d81676e}{get\+Patient}} ()
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_patient}{Patient}} object. \end{DoxyCompactList}\item 
@@ -17,14 +15,19 @@ string \mbox{\hyperlink{class_appointment_a15b5f45cac7c0a3d55cfc8085d5e2d2d}{get
 \begin{DoxyCompactList}\small\item\em Get the Type object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{class_personnel}{Personnel}} \mbox{\hyperlink{class_appointment_a5b27a08cf834bb291bd1cb273d0b0937}{get\+Personnel}} ()
 \begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_personnel}{Personnel}} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_appointment_ab503ea8c09bab743c203e1060f726564}{get\+Ref\+Num}} ()
+\begin{DoxyCompactList}\small\item\em Get the Ref\+Num object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_appointment_a9fc29ca405c7b89ed61a8a6516dbe261}{set\+Patient}} (\mbox{\hyperlink{class_patient}{Patient}} patient)
 \begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_patient}{Patient}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_appointment_a18652b9cc303366da4115bfb834cbbb9}{set\+Type}} (string type)
 \begin{DoxyCompactList}\small\item\em Set the Type object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_appointment_a98d9ebeb972367a66f4c13cdba129af4}{set\+Personnel}} (\mbox{\hyperlink{class_personnel}{Personnel}} personnel)
 \begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_personnel}{Personnel}} object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{class_appointment_a159afaa27942e4a85317af80889ea036}{set\+Date\+Time}} (\mbox{\hyperlink{struct_date_time}{Date\+Time}} date\+Time)
-\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{struct_date}{Date}} Time object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{class_appointment_a2405096a6d35db6e482c8d82797c2305}{set\+Date\+Time}} (\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} date\+Time)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{struct_date}{Date}} Time object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_appointment_a5ca67fd465c856dbeedb508b33519b3f}\label{class_appointment_a5ca67fd465c856dbeedb508b33519b3f}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{class_appointment}{Appointment}} a)
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -38,15 +41,17 @@ void \mbox{\hyperlink{class_appointment_a159afaa27942e4a85317af80889ea036}{set\+
 
 Construct a new appointment object. 
 
-\mbox{\Hypertarget{class_appointment_a92af6a78192dae4a630d3a2d462492a9}\label{class_appointment_a92af6a78192dae4a630d3a2d462492a9}} 
+Construct a new \mbox{\hyperlink{class_appointment}{Appointment}}\+:\+: \mbox{\hyperlink{class_appointment}{Appointment}} object default constructor.\mbox{\Hypertarget{class_appointment_a92af6a78192dae4a630d3a2d462492a9}\label{class_appointment_a92af6a78192dae4a630d3a2d462492a9}} 
 \index{Appointment@{Appointment}!Appointment@{Appointment}}
 \index{Appointment@{Appointment}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{Appointment()}{Appointment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily Appointment\+::\+Appointment (\begin{DoxyParamCaption}\item[{string}]{type,  }\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{patient,  }\item[{\mbox{\hyperlink{class_personnel}{Personnel}}}]{personnel,  }\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{date\+Time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Appointment\+::\+Appointment (\begin{DoxyParamCaption}\item[{string}]{new\+Type,  }\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{new\+Patient,  }\item[{\mbox{\hyperlink{class_personnel}{Personnel}}}]{new\+Personnel,  }\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{new\+Date\+Time }\end{DoxyParamCaption})}
 
 
 
 Construct a new appointment object. 
+
+Construct a new \mbox{\hyperlink{class_appointment}{Appointment}}\+:\+: \mbox{\hyperlink{class_appointment}{Appointment}} object.
 
 
 \begin{DoxyParams}{Parameters}
@@ -58,34 +63,36 @@ Construct a new appointment object.
 \hline
 {\em date\+Time} & \\
 \hline
+{\em refnum} & \\
+\hline
+{\em new\+Date\+Time} & \\
+\hline
+{\em new\+Patient} & \\
+\hline
+{\em new\+Type} & \\
+\hline
+{\em new\+Personnel} & \\
+\hline
+{\em r} & \\
+\hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_appointment_a3fb7487548e10abc6e581a550f1d800d}\label{class_appointment_a3fb7487548e10abc6e581a550f1d800d}} 
-\index{Appointment@{Appointment}!````~Appointment@{$\sim$Appointment}}
-\index{````~Appointment@{$\sim$Appointment}!Appointment@{Appointment}}
-\doxysubsubsection{\texorpdfstring{$\sim$Appointment()}{~Appointment()}}
-{\footnotesize\ttfamily Appointment\+::$\sim$\+Appointment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Destroy the appointment object. 
-
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_appointment_a3fede7e399b1e336c2cdfd043c5d04a2}\label{class_appointment_a3fede7e399b1e336c2cdfd043c5d04a2}} 
+\mbox{\Hypertarget{class_appointment_a5cb79cdad094079253c5d13ac383c198}\label{class_appointment_a5cb79cdad094079253c5d13ac383c198}} 
 \index{Appointment@{Appointment}!getDateTime@{getDateTime}}
 \index{getDateTime@{getDateTime}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{getDateTime()}{getDateTime()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{struct_date_time}{Date\+Time}} Appointment\+::get\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}} Appointment\+::get\+Date\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
 Get the \mbox{\hyperlink{struct_date}{Date}} Time object. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{struct_date_time}{Date\+Time}} 
+\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_appointment_a92a73b5fe0159d318d4e841d5d81676e}\label{class_appointment_a92a73b5fe0159d318d4e841d5d81676e}} 
+Get the \mbox{\hyperlink{struct_date}{Date}} Time object \mbox{\Hypertarget{class_appointment_a92a73b5fe0159d318d4e841d5d81676e}\label{class_appointment_a92a73b5fe0159d318d4e841d5d81676e}} 
 \index{Appointment@{Appointment}!getPatient@{getPatient}}
 \index{getPatient@{getPatient}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{getPatient()}{getPatient()}}
@@ -96,9 +103,9 @@ Get the \mbox{\hyperlink{struct_date}{Date}} Time object.
 Get the \mbox{\hyperlink{class_patient}{Patient}} object. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{class_patient}{Patient}} 
+\mbox{\hyperlink{class_patient}{Patient}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_appointment_a5b27a08cf834bb291bd1cb273d0b0937}\label{class_appointment_a5b27a08cf834bb291bd1cb273d0b0937}} 
+Get the \mbox{\hyperlink{class_patient}{Patient}} object \mbox{\Hypertarget{class_appointment_a5b27a08cf834bb291bd1cb273d0b0937}\label{class_appointment_a5b27a08cf834bb291bd1cb273d0b0937}} 
 \index{Appointment@{Appointment}!getPersonnel@{getPersonnel}}
 \index{getPersonnel@{getPersonnel}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{getPersonnel()}{getPersonnel()}}
@@ -109,9 +116,22 @@ Get the \mbox{\hyperlink{class_patient}{Patient}} object.
 Get the \mbox{\hyperlink{class_personnel}{Personnel}} object. 
 
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{class_personnel}{Personnel}} 
+\mbox{\hyperlink{class_personnel}{Personnel}}
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_appointment_a15b5f45cac7c0a3d55cfc8085d5e2d2d}\label{class_appointment_a15b5f45cac7c0a3d55cfc8085d5e2d2d}} 
+Get the \mbox{\hyperlink{class_personnel}{Personnel}} object \mbox{\Hypertarget{class_appointment_ab503ea8c09bab743c203e1060f726564}\label{class_appointment_ab503ea8c09bab743c203e1060f726564}} 
+\index{Appointment@{Appointment}!getRefNum@{getRefNum}}
+\index{getRefNum@{getRefNum}!Appointment@{Appointment}}
+\doxysubsubsection{\texorpdfstring{getRefNum()}{getRefNum()}}
+{\footnotesize\ttfamily int Appointment\+::get\+Ref\+Num (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the Ref\+Num object. 
+
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+Get the reference number object \mbox{\Hypertarget{class_appointment_a15b5f45cac7c0a3d55cfc8085d5e2d2d}\label{class_appointment_a15b5f45cac7c0a3d55cfc8085d5e2d2d}} 
 \index{Appointment@{Appointment}!getType@{getType}}
 \index{getType@{getType}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}
@@ -122,13 +142,13 @@ Get the \mbox{\hyperlink{class_personnel}{Personnel}} object.
 Get the Type object. 
 
 \begin{DoxyReturn}{Returns}
-string 
+string
 \end{DoxyReturn}
-\mbox{\Hypertarget{class_appointment_a159afaa27942e4a85317af80889ea036}\label{class_appointment_a159afaa27942e4a85317af80889ea036}} 
+Get the Type object \mbox{\Hypertarget{class_appointment_a2405096a6d35db6e482c8d82797c2305}\label{class_appointment_a2405096a6d35db6e482c8d82797c2305}} 
 \index{Appointment@{Appointment}!setDateTime@{setDateTime}}
 \index{setDateTime@{setDateTime}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{setDateTime()}{setDateTime()}}
-{\footnotesize\ttfamily void Appointment\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_date_time}{Date\+Time}}}]{date\+Time }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Appointment\+::set\+Date\+Time (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_appointment_slot}{Appointment\+Slot}}}]{new\+Date\+Time }\end{DoxyParamCaption})}
 
 
 
@@ -139,11 +159,11 @@ Set the \mbox{\hyperlink{struct_date}{Date}} Time object.
 {\em date\+Time} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_appointment_a9fc29ca405c7b89ed61a8a6516dbe261}\label{class_appointment_a9fc29ca405c7b89ed61a8a6516dbe261}} 
+Set the \mbox{\hyperlink{struct_date}{Date}} Time object \mbox{\Hypertarget{class_appointment_a9fc29ca405c7b89ed61a8a6516dbe261}\label{class_appointment_a9fc29ca405c7b89ed61a8a6516dbe261}} 
 \index{Appointment@{Appointment}!setPatient@{setPatient}}
 \index{setPatient@{setPatient}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{setPatient()}{setPatient()}}
-{\footnotesize\ttfamily void Appointment\+::set\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{patient }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Appointment\+::set\+Patient (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_patient}{Patient}}}]{new\+Patient }\end{DoxyParamCaption})}
 
 
 
@@ -154,11 +174,11 @@ Set the \mbox{\hyperlink{class_patient}{Patient}} object.
 {\em patient} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_appointment_a98d9ebeb972367a66f4c13cdba129af4}\label{class_appointment_a98d9ebeb972367a66f4c13cdba129af4}} 
+Set the \mbox{\hyperlink{class_patient}{Patient}} object \mbox{\Hypertarget{class_appointment_a98d9ebeb972367a66f4c13cdba129af4}\label{class_appointment_a98d9ebeb972367a66f4c13cdba129af4}} 
 \index{Appointment@{Appointment}!setPersonnel@{setPersonnel}}
 \index{setPersonnel@{setPersonnel}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{setPersonnel()}{setPersonnel()}}
-{\footnotesize\ttfamily void Appointment\+::set\+Personnel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_personnel}{Personnel}}}]{personnel }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Appointment\+::set\+Personnel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_personnel}{Personnel}}}]{new\+Personnel }\end{DoxyParamCaption})}
 
 
 
@@ -169,11 +189,11 @@ Set the \mbox{\hyperlink{class_personnel}{Personnel}} object.
 {\em personnel} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{class_appointment_a18652b9cc303366da4115bfb834cbbb9}\label{class_appointment_a18652b9cc303366da4115bfb834cbbb9}} 
+Set the \mbox{\hyperlink{class_personnel}{Personnel}} object \mbox{\Hypertarget{class_appointment_a18652b9cc303366da4115bfb834cbbb9}\label{class_appointment_a18652b9cc303366da4115bfb834cbbb9}} 
 \index{Appointment@{Appointment}!setType@{setType}}
 \index{setType@{setType}!Appointment@{Appointment}}
 \doxysubsubsection{\texorpdfstring{setType()}{setType()}}
-{\footnotesize\ttfamily void Appointment\+::set\+Type (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Appointment\+::set\+Type (\begin{DoxyParamCaption}\item[{string}]{new\+Type }\end{DoxyParamCaption})}
 
 
 
@@ -184,8 +204,9 @@ Set the Type object.
 {\em type} & \\
 \hline
 \end{DoxyParams}
+Set the Type object 
 
-
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{_appointment_8h}{Appointment.\+h}}\end{DoxyCompactItemize}
+\mbox{\hyperlink{_appointment_8h}{Appointment.\+h}}\item 
+Appointment.\+cpp\end{DoxyCompactItemize}
