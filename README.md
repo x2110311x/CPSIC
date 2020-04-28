@@ -1,5 +1,6 @@
 # The Coronavirus Pandemic System Integrated Control
 https://github.com/x2110311x/CPSIC
+Note: This Repo is created for CS 33901 at Kent State University at Stark - Spring 2020
 ## Scott Caldwell
 My overall experience has been very positive. My team members have been very knowledgeable and fair. It has been a large learning experience for me especially considering the new conditions we have been under, but I’m very happy with the perseverance of our group and with the product we have so far.
 
